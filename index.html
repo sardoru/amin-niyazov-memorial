@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amin Niyazov — Memorial</title>
+<meta name="description" content="Memorial website for Amin Irmatovich Niyazov (1903–1973), Soviet Uzbek statesman, 8th First Secretary of the Communist Party of Uzbekistan.">
+<meta property="og:title" content="Amin Niyazov Memorial (1903–1973)">
+<meta property="og:description" content="From sharecropper's son to leader of Uzbekistan — the life and legacy of Amin Irmatovich Niyazov.">
+<meta property="og:image" content="/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amin Niyazov Memorial (1903–1973)">
+<meta name="twitter:description" content="From sharecropper's son to leader of Uzbekistan — the life and legacy of Amin Irmatovich Niyazov.">
+<meta name="twitter:image" content="/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
+<style>
+:root{
+--crimson:#7B1E2B;--crimson-light:#9B2335;--gold:#C5A55A;--gold-light:#D4BA7A;--ivory:#FAF7F0;--navy:#1A1A2E;--navy-light:#2D2D44;
+--bg:#FAF7F0;--bg2:#F0ECE2;--text:#1A1A2E;--text2:#4A4A5A;--card-bg:#FFFFFF;--card-border:#E8E2D6;--card-shadow:0 4px 24px rgba(0,0,0,.08);
+--hero-overlay:rgba(26,26,46,.75);--glass-bg:rgba(255,255,255,.8);--glass-border:rgba(255,255,255,.3);
+--font-display:'Playfair Display',Georgia,serif;--font-body:'Inter','Noto Serif',system-ui,sans-serif;
+--fs-hero:clamp(2.2rem,5vw,4.5rem);--fs-h2:clamp(1.6rem,3vw,2.6rem);--fs-h3:clamp(1.2rem,2vw,1.6rem);--fs-body:clamp(.95rem,1.2vw,1.1rem);
+--max-w:1200px;--radius:12px;
+}
+[data-theme="dark"]{
+--bg:#0A0A0F;--bg2:#12121A;--text:#E8E2D6;--text2:#A0A0B0;--card-bg:rgba(30,30,45,.6);--card-border:rgba(197,165,90,.15);--card-shadow:0 4px 32px rgba(0,0,0,.4);
+--hero-overlay:rgba(10,10,15,.8);--glass-bg:rgba(30,30,45,.5);--glass-border:rgba(197,165,90,.2);
+--crimson:#C5526A;--gold:#D4BA7A;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.7;font-size:var(--fs-body);transition:background .4s,color .4s}
+h1,h2,h3{font-family:var(--font-display);line-height:1.2;color:var(--text)}
+h2{font-size:var(--fs-h2);margin-bottom:1rem;position:relative;padding-bottom:.5rem}
+h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:linear-gradient(90deg,var(--gold),var(--crimson));border-radius:2px}
+h3{font-size:var(--fs-h3);margin-bottom:.6rem;color:var(--crimson)}
+p{margin-bottom:1rem}
+a{color:var(--crimson);text-decoration:none}
+img{max-width:100%;display:block}
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:var(--glass-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--glass-border);padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-brand{font-family:var(--font-display);font-weight:700;font-size:1.1rem;color:var(--crimson);white-space:nowrap}
+.nav-links{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.nav-links a{font-size:.85rem;color:var(--text2);padding:.3rem .5rem;border-radius:6px;transition:all .2s}
+.nav-links a:hover{color:var(--crimson);background:var(--bg2)}
+.nav-controls{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.lang-btn,.theme-btn{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--card-border);border-radius:8px;background:var(--card-bg);color:var(--text);cursor:pointer;font-size:.8rem;font-weight:600;transition:all .2s;font-family:var(--font-body)}
+.lang-btn:hover,.theme-btn:hover{border-color:var(--gold);background:var(--bg2)}
+.lang-btn.active{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+@media(max-width:480px){.nav-links{display:none}.nav{padding:.5rem 1rem}}
+/* HERO */
+.hero{position:relative;min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,var(--navy) 0%,var(--crimson) 100%);overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='rgba(197,165,90,0.08)' stroke-width='1'/%3E%3C/svg%3E") repeat;opacity:.5}
+.hero-content{position:relative;z-index:2;padding:2rem;max-width:800px}
+.hero h1{font-size:var(--fs-hero);color:#FAF7F0;font-weight:900;margin-bottom:.5rem;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+.hero .subtitle{font-size:clamp(1rem,2vw,1.4rem);color:var(--gold-light);margin-bottom:.3rem;font-weight:300}
+.hero .dates{font-size:clamp(1.1rem,2vw,1.5rem);color:rgba(250,247,240,.7);font-family:var(--font-display);letter-spacing:.1em}
+.hero .epithet{font-size:clamp(.9rem,1.5vw,1.1rem);color:rgba(250,247,240,.6);font-style:italic;margin-top:1.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:var(--gold-light);font-size:1.5rem;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+/* SECTIONS */
+.section{padding:clamp(3rem,6vw,6rem) 1.5rem;max-width:var(--max-w);margin:0 auto}
+.section:nth-child(even){background:var(--bg2);max-width:100%;padding-left:calc((100% - var(--max-w))/2 + 1.5rem);padding-right:calc((100% - var(--max-w))/2 + 1.5rem)}
+.section-inner{max-width:var(--max-w);margin:0 auto}
+/* INFOBOX */
+.bio-layout{display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start}
+.infobox{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--card-shadow);overflow:hidden;position:sticky;top:80px}
+.infobox-header{background:linear-gradient(135deg,var(--crimson),var(--navy));color:#FAF7F0;padding:1.2rem;text-align:center;font-family:var(--font-display);font-size:1.2rem;font-weight:700}
+.infobox table{width:100%;border-collapse:collapse}
+.infobox td{padding:.6rem .8rem;font-size:.88rem;border-bottom:1px solid var(--card-border);vertical-align:top}
+.infobox td:first-child{font-weight:600;color:var(--crimson);width:40%;white-space:nowrap}
+@media(max-width:768px){.bio-layout{grid-template-columns:1fr}.infobox{position:static;order:-1}}
+/* CARDS */
+.card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--card-shadow);margin-bottom:1.5rem;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.12)}
+[data-theme="dark"] .card:hover{box-shadow:0 8px 32px rgba(197,165,90,.1)}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;margin:2rem 0}
+.stat{text-align:center;padding:1.5rem 1rem;background:var(--card-bg);border-radius:var(--radius);border:1px solid var(--card-border);box-shadow:var(--card-shadow)}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:900;font-family:var(--font-display);color:var(--crimson);line-height:1}
+.stat-label{font-size:.85rem;color:var(--text2);margin-top:.4rem}
+/* TIMELINE */
+.timeline{position:relative;padding-left:2rem;margin:2rem 0}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gold),var(--crimson),var(--navy))}
+.timeline-item{position:relative;margin-bottom:2rem;padding-left:1.5rem}
+.timeline-item::before{content:'';position:absolute;left:-2rem;top:.4rem;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--gold)}
+.timeline-year{font-family:var(--font-display);font-weight:700;color:var(--crimson);font-size:1.1rem}
+/* AWARDS */
+.awards-list{display:flex;flex-wrap:wrap;gap:1rem;margin:1.5rem 0}
+.award{display:flex;align-items:center;gap:.6rem;background:var(--card-bg);padding:.8rem 1.2rem;border-radius:var(--radius);border:1px solid var(--card-border);box-shadow:var(--card-shadow);font-size:.92rem}
+.award-icon{font-size:1.4rem}
+/* FAMILY */
+.family-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin:1.5rem 0}
+.family-member{background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius);padding:1.2rem;box-shadow:var(--card-shadow)}
+.family-member h4{font-family:var(--font-display);color:var(--crimson);margin-bottom:.3rem}
+.family-member p{font-size:.9rem;color:var(--text2);margin-bottom:0}
+/* FOOTER */
+footer{background:var(--navy);color:rgba(250,247,240,.7);text-align:center;padding:2.5rem 1.5rem;font-size:.85rem}
+footer a{color:var(--gold-light)}
+/* FADE IN */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.fade-in{opacity:1;transform:none;transition:none}.scroll-hint{animation:none}}
+/* QUOTE */
+blockquote{border-left:4px solid var(--gold);padding:.8rem 1.2rem;margin:1.5rem 0;background:var(--bg2);border-radius:0 var(--radius) var(--radius) 0;font-style:italic;color:var(--text2)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation">
+<div class="nav-brand">А. Ниязов</div>
+<div class="nav-links">
+<a href="#biography" data-i18n="nav_bio"></a>
+<a href="#early" data-i18n="nav_early"></a>
+<a href="#education" data-i18n="nav_edu"></a>
+<a href="#wwii" data-i18n="nav_wwii"></a>
+<a href="#leader" data-i18n="nav_leader"></a>
+<a href="#legacy" data-i18n="nav_legacy"></a>
+<a href="#family" data-i18n="nav_family"></a>
+</div>
+<div class="nav-controls">
+<button class="lang-btn" data-lang="en">EN</button>
+<button class="lang-btn" data-lang="ru">RU</button>
+<button class="lang-btn" data-lang="uz">UZ</button>
+<button class="lang-btn" data-lang="fr">FR</button>
+<button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+</div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+<div class="hero-content fade-in">
+<div class="subtitle" data-i18n="hero_subtitle"></div>
+<h1 data-i18n="hero_name"></h1>
+<div class="dates">1903 — 1973</div>
+<p class="epithet" data-i18n="hero_epithet"></p>
+</div>
+<div class="scroll-hint">↓</div>
+</header>
+
+<!-- BIOGRAPHY + INFOBOX -->
+<section class="section" id="biography">
+<div class="bio-layout">
+<div class="fade-in">
+<h2 data-i18n="bio_title"></h2>
+<p data-i18n="bio_p1"></p>
+<p data-i18n="bio_p2"></p>
+<p data-i18n="bio_p3"></p>
+</div>
+<aside class="infobox fade-in">
+<div class="infobox-header" data-i18n="infobox_header"></div>
+<table>
+<tr><td data-i18n="ib_born_label"></td><td data-i18n="ib_born"></td></tr>
+<tr><td data-i18n="ib_died_label"></td><td data-i18n="ib_died"></td></tr>
+<tr><td data-i18n="ib_nation_label"></td><td data-i18n="ib_nation"></td></tr>
+<tr><td data-i18n="ib_party_label"></td><td data-i18n="ib_party"></td></tr>
+<tr><td data-i18n="ib_edu_label"></td><td data-i18n="ib_edu"></td></tr>
+<tr><td data-i18n="ib_office_label"></td><td data-i18n="ib_office"></td></tr>
+<tr><td data-i18n="ib_spouse_label"></td><td data-i18n="ib_spouse"></td></tr>
+<tr><td data-i18n="ib_children_label"></td><td data-i18n="ib_children"></td></tr>
+</table>
+</aside>
+</div>
+</section>
+
+<!-- EARLY YEARS -->
+<section class="section" id="early">
+<div class="section-inner">
+<div class="fade-in">
+<h2 data-i18n="early_title"></h2>
+<p data-i18n="early_p1"></p>
+<p data-i18n="early_p2"></p>
+<p data-i18n="early_p3"></p>
+<blockquote data-i18n="early_quote"></blockquote>
+</div>
+</div>
+</section>
+
+<!-- EDUCATION & INDUSTRY -->
+<section class="section" id="education">
+<div class="fade-in">
+<h2 data-i18n="edu_title"></h2>
+<p data-i18n="edu_p1"></p>
+<p data-i18n="edu_p2"></p>
+<p data-i18n="edu_p3"></p>
+<p data-i18n="edu_p4"></p>
+</div>
+</section>
+
+<!-- WWII -->
+<section class="section" id="wwii">
+<div class="section-inner">
+<div class="fade-in">
+<h2 data-i18n="wwii_title"></h2>
+<p data-i18n="wwii_p1"></p>
+<p data-i18n="wwii_p2"></p>
+<div class="stats-grid">
+<div class="stat"><div class="stat-number">42</div><div class="stat-label" data-i18n="wwii_stat1"></div></div>
+<div class="stat"><div class="stat-number">280</div><div class="stat-label" data-i18n="wwii_stat2"></div></div>
+<div class="stat"><div class="stat-number">1941–45</div><div class="stat-label" data-i18n="wwii_stat3"></div></div>
+</div>
+<p data-i18n="wwii_p3"></p>
+</div>
+</div>
+</section>
+
+<!-- RISE TO POWER -->
+<section class="section" id="rise">
+<div class="fade-in">
+<h2 data-i18n="rise_title"></h2>
+<p data-i18n="rise_p1"></p>
+<p data-i18n="rise_p2"></p>
+</div>
+</section>
+
+<!-- FIRST SECRETARY -->
+<section class="section" id="leader">
+<div class="section-inner">
+<div class="fade-in">
+<h2 data-i18n="leader_title"></h2>
+<p data-i18n="leader_p1"></p>
+<div class="stats-grid">
+<div class="stat"><div class="stat-number" data-i18n="leader_stat1_num"></div><div class="stat-label" data-i18n="leader_stat1"></div></div>
+<div class="stat"><div class="stat-number">22,428</div><div class="stat-label" data-i18n="leader_stat2"></div></div>
+<div class="stat"><div class="stat-number">42</div><div class="stat-label" data-i18n="leader_stat3"></div></div>
+</div>
+<p data-i18n="leader_p2"></p>
+<p data-i18n="leader_p3"></p>
+</div>
+</div>
+</section>
+
+<!-- FOREIGN POLICY -->
+<section class="section" id="foreign">
+<div class="fade-in">
+<h2 data-i18n="foreign_title"></h2>
+<p data-i18n="foreign_p1"></p>
+<p data-i18n="foreign_p2"></p>
+</div>
+</section>
+
+<!-- THE FALL -->
+<section class="section" id="fall">
+<div class="section-inner">
+<div class="fade-in">
+<h2 data-i18n="fall_title"></h2>
+<p data-i18n="fall_p1"></p>
+<p data-i18n="fall_p2"></p>
+<blockquote data-i18n="fall_quote"></blockquote>
+</div>
+</div>
+</section>
+
+<!-- LEGACY -->
+<section class="section" id="legacy">
+<div class="fade-in">
+<h2 data-i18n="legacy_title"></h2>
+<p data-i18n="legacy_p1"></p>
+<p data-i18n="legacy_p2"></p>
+</div>
+</section>
+
+<!-- AWARDS -->
+<section class="section" id="awards">
+<div class="section-inner">
+<div class="fade-in">
+<h2 data-i18n="awards_title"></h2>
+<div class="awards-list">
+<div class="award"><span class="award-icon">🏅</span><span data-i18n="award1"></span></div>
+<div class="award"><span class="award-icon">🏅</span><span data-i18n="award2"></span></div>
+<div class="award"><span class="award-icon">⭐</span><span data-i18n="award3"></span></div>
+<div class="award"><span class="award-icon">🏗️</span><span data-i18n="award4"></span></div>
+<div class="award"><span class="award-icon">📜</span><span data-i18n="award5"></span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAMILY -->
+<section class="section" id="family">
+<div class="fade-in">
+<h2 data-i18n="family_title"></h2>
+<p data-i18n="family_intro"></p>
+<div class="family-grid">
+<div class="family-member"><h4 data-i18n="fam_wife_name"></h4><p data-i18n="fam_wife_desc"></p></div>
+<div class="family-member"><h4 data-i18n="fam_c1_name"></h4><p data-i18n="fam_c1_desc"></p></div>
+<div class="family-member"><h4 data-i18n="fam_c2_name"></h4><p data-i18n="fam_c2_desc"></p></div>
+<div class="family-member"><h4 data-i18n="fam_c3_name"></h4><p data-i18n="fam_c3_desc"></p></div>
+<div class="family-member"><h4 data-i18n="fam_c4_name"></h4><p data-i18n="fam_c4_desc"></p></div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p data-i18n="footer_memory"></p>
+<p data-i18n="footer_copy"></p>
+</footer>
+
+<script>
+const T={
+en:{
+nav_bio:"Biography",nav_early:"Early Years",nav_edu:"Education",nav_wwii:"WWII",nav_leader:"Leadership",nav_legacy:"Legacy",nav_family:"Family",
+hero_subtitle:"Soviet Uzbek Statesman",hero_name:"Amin Irmatovich Niyazov",hero_epithet:"From a sharecropper's son in a small kishlak to the leader of one of the largest Soviet republics — a life dedicated to building a nation.",
+bio_title:"Biography",
+bio_p1:"Aminjan Irmatovich Niyazov (1903–1973) rose from the humblest origins to become one of the most consequential leaders in the history of Soviet Uzbekistan. Born in the kishlak of Ak-Tepe near Margilan, the son of Irmat-aka — a sharecropper who labored on the lands of wealthy bais — he would go on to serve as the 8th First Secretary of the Communist Party of Uzbekistan, Chairman of the Supreme Soviet, and People's Commissar of Finance during the Great Patriotic War.",
+bio_p2:"His life spanned the entire arc of Soviet history in Central Asia: from the revolution and civil war, through industrialization, the Second World War, postwar reconstruction, and the complex politics of the Khrushchev era. At every stage, he proved himself a builder — of factories, reservoirs, schools, and institutions.",
+bio_p3:"He worked seventeen years without a vacation, a testament to his tireless dedication that ultimately took its toll on his health. Honored as a builder of the republic in the final weeks of his life, he passed away in December 1973, leaving behind a transformed Uzbekistan.",
+infobox_header:"Amin I. Niyazov",
+ib_born_label:"Born",ib_born:"7 November 1903, Ak-Tepe, near Margilan",
+ib_died_label:"Died",ib_died:"26 December 1973, Tashkent",
+ib_nation_label:"Nationality",ib_nation:"Uzbek",
+ib_party_label:"Party",ib_party:"CPSU (since 1925)",
+ib_edu_label:"Education",ib_edu:"All-Union Industrial Academy, Moscow (1930–34)",
+ib_office_label:"Key Office",ib_office:"8th First Secretary of CP Uzbekistan (1950–55)",
+ib_spouse_label:"Spouse",ib_spouse:"Salimakhon Niyazova",
+ib_children_label:"Children",ib_children:"Adkhamjon, Khalida, Rustam, Lola",
+early_title:"Early Years",
+early_p1:"Amin Niyazov was born on 7 November 1903 in the kishlak of Ak-Tepe, near the ancient city of Margilan in the Fergana Valley. His father, Irmat-aka, was a sharecropper — an izdolshchik — who worked the land of wealthy landowners, never owning soil of his own.",
+early_p2:"From childhood, the young Amin showed exceptional aptitude for physics and mathematics. He began his education in an old-style maktab before moving to a modern school. The upheaval of the Russian Civil War brought famine to the Fergana Valley; he survived on grass and oil cake. Yet even as a teenager, he joined the effort to distribute expropriated grain to starving families.",
+early_p3:"At just sixteen, he joined the Komsomol and began working for the Fergana district food committee. He soon entered the service of the Turkestan Cheka and GPU — the early Soviet security organs — before transitioning to financial administration, becoming head of the Finance Department of Fergana Oblast. In the 1920s, he personally implemented land-water reform, taking land and irrigation channels from the bais and redistributing them to landless dehkans.",
+early_quote:"Some peasants, under religious influence, refused the land: 'I will die of hunger, but I will not take the bai's land.' Yet the reform went forward, transforming the lives of thousands.",
+edu_title:"Education & Industry",
+edu_p1:"In 1930, Niyazov was sent to the All-Union Industrial Academy in Moscow — the prestigious institution where the Soviet Union trained its future industrial leaders. There, he became a classmate of Nikita Khrushchev, the future leader of the Soviet Union. He studied with distinction, excelling in machine parts, strength of materials, and theoretical mechanics.",
+edu_p2:"Before departing for Moscow, he had been offered by Akmal Ikramov, then First Secretary of the CP of Uzbekistan, a place among 70 young people to study in Germany. Niyazov declined — he could not leave his elderly mother and young family behind.",
+edu_p3:"After graduating in 1934, he volunteered to work as an ordinary foreman at the construction site of the Chirchik electrochemical combine — one of the largest industrial projects in Central Asia. Through skill and dedication, he rose from foreman to site manager, then to chief engineer, and finally to head of the construction control committee of the Council of People's Commissars.",
+edu_p4:"He also championed the textile industry in Fergana, disproving experts who claimed the region's climate was unsuitable for factories. He sent approximately 900 young workers to Russian textile centers for training; they returned to staff the new enterprises of Uzbekistan.",
+wwii_title:"The Great Patriotic War",
+wwii_p1:"When Nazi Germany invaded the Soviet Union in 1941, Uzbekistan became a critical rear base for the entire war effort. Millions of evacuees poured into the republic, along with entire factories dismantled and shipped eastward on railcars. As People's Commissar of Finance of the Uzbek SSR (1940–1946), Niyazov bore the immense responsibility of financing this industrial transformation.",
+wwii_p2:"His most remarkable achievement was ensuring that the Chkalov Aviation Factory — evacuated from European Russia — was operational within just 42 days of arriving in Uzbekistan. Under his financial stewardship, 280 new industrial enterprises were built and brought online during the war years, giving rise to entirely new industries: aviation, machine tools, heavy industry, and metallurgy.",
+wwii_stat1:"Days to launch the Chkalov Aviation Factory",
+wwii_stat2:"New enterprises built during the war",
+wwii_stat3:"Years as People's Commissar of Finance",
+wwii_p3:"Niyazov operated in the highest strategic echelon of the republic's war effort, ensuring that every ruble was deployed where it mattered most. His work helped transform Uzbekistan from a primarily agricultural republic into an industrial powerhouse.",
+rise_title:"Rise to Power",
+rise_p1:"After the war, Niyazov served as Deputy Chairman of the Council of Ministers (1946–47), then was elevated to Chairman of the Presidium of the Supreme Soviet of the Uzbek SSR (1947–1950) — effectively the head of state of Uzbekistan. In this role, he initiated the construction of the Kattakurgan and Chimkurgan reservoirs, massive irrigation projects that would transform agriculture in the Samarkand, Bukhara, and Khorezm regions.",
+rise_p2:"He oversaw land development in Central Fergana and the Hungry Steppe (Golodnaya Step), bringing water to arid lands and enabling the expansion of cotton cultivation that would define Uzbekistan's economy for decades to come. In April 1950, he was appointed 8th First Secretary of the Central Committee of the Communist Party of Uzbekistan, succeeding Usman Yusupov.",
+leader_title:"First Secretary of Uzbekistan (1950–1955)",
+leader_p1:"As the most powerful figure in Uzbekistan, Niyazov pursued an ambitious program of modernization. In 1950, Uzbekistan collected 3 million tons of raw cotton for the first time in its history — a milestone that required not just agricultural labor but a revolution in mechanization.",
+leader_stat1_num:"3M",leader_stat1:"Tons of cotton — a historic first",
+leader_stat2:"Cotton-harvesting machines deployed",
+leader_stat3:"New schools built across the republic",
+leader_p2:"He oversaw the deployment of 22,428 cotton-harvesting machines (SHM-48), manufactured at the Tashselmash factory in Tashkent. He built 42 schools, provided full textbooks and supplies, and organized state meals for 1,000 boarding school children. New medical institutions arose: a Medical Institute in Andijan, the Institute of Regional Medicine, and the Research Institute of Oncology and Radiology.",
+leader_p3:"Industrial construction accelerated: an auto-repair factory in Andijan, a diesel power station in Bukhara, the Namangan HPP, a thermal power plant in Karshi, and the Angren GRES. He established 'Suburban Zones' around cities to ensure vegetable and dairy supply, and purchased 3,000 pedigree heifers from abroad to improve livestock quality.",
+foreign_title:"Foreign Policy",
+foreign_p1:"Working closely with Vyacheslav Molotov, the USSR Foreign Minister, Niyazov helped establish contacts with leaders of the Bandung Conference — the gathering of 29 non-aligned nations that reshaped Cold War diplomacy. Uzbekistan, under his leadership, became a showcase for Soviet development in Asia.",
+foreign_p2:"He organized the first visits to the Soviet Union — including Uzbekistan — by Jawaharlal Nehru and his daughter Indira Gandhi in 1955, as well as U Nu, the Prime Minister of Burma. These visits were part of a broader diplomatic offensive that included the official Soviet delegation of Bulganin and Khrushchev to India, Burma, and Afghanistan.",
+fall_title:"The Fall",
+fall_p1:"On December 22, 1955, at an extraordinary plenum of the Central Committee, Niyazov was dismissed as First Secretary. Moscow representatives arrived bearing accusations of insufficient cotton production. That same day, he was appointed Minister of Municipal Economy — a dramatic demotion.",
+fall_p2:"But the true reasons ran deeper than cotton yields. Niyazov had refused to join any political faction or grouping. He did not support Khrushchev's intrigues during the turbulent post-Stalin power struggle — and this, according to those who knew him, was the subconscious motive for his removal. Ironically, Khrushchev — his former classmate at the Industrial Academy — signed his political fate.",
+fall_quote:"He did not join factions. He did not support intrigues. And for this, he paid the price that honest men pay in politics.",
+legacy_title:"Legacy",
+legacy_p1:"Even after his dismissal, Niyazov continued to serve. As Minister of Municipal Economy, he pioneered the supply of natural gas to Uzbek households — the first time ordinary citizens had access to this resource. In retirement, he contributed to the construction of the Tashkent–Kokand highway.",
+legacy_p2:"In November 1973, on his 70th birthday, he was awarded the title 'Honored Builder of the Uzbek SSR' — a fitting recognition for a man who had spent his entire life building. He passed away in December 1973 in Tashkent. He had worked seventeen years without a single vacation. The reservoirs he built still irrigate Uzbekistan's fields. The factories he financed still stand. The schools he opened still teach.",
+awards_title:"Awards & Honors",
+award1:"Two Orders of Lenin",award2:"Three Orders of the Red Banner of Labour",award3:"Two Orders of the Red Star",award4:"Honored Builder of the Uzbek SSR (1973)",award5:"Honorary Diploma for Land-Water Reform",
+family_title:"Family",
+family_intro:"Behind every statesman stands a family. Salimakhon Niyazova was the keeper of the family hearth — a faithful helper and reliable support throughout decades of service and sacrifice.",
+fam_wife_name:"Salimakhon Niyazova",fam_wife_desc:"Wife — devoted companion through decades of public service",
+fam_c1_name:"Adkhamjon Niyazov (1930–1999)",fam_c1_desc:"Associate Professor at the Polytechnic Institute",
+fam_c2_name:"Khalida Niyazova (1933–1996)",fam_c2_desc:"Physician and doctor",
+fam_c3_name:"Rustam Niyazov (b. 1938)",fam_c3_desc:"Candidate of geological-mineralogical sciences, General Director of Uzbekhydrogeology Research Institute",
+fam_c4_name:"Lola Niyazova (b. 1940)",fam_c4_desc:"Teacher of Russian language and literature",
+footer_memory:"In loving memory of Aminjan Irmatovich Niyazov (1903–1973)",
+footer_copy:"© Niyazov Family Memorial"
+},
+ru:{
+nav_bio:"Биография",nav_early:"Ранние годы",nav_edu:"Образование",nav_wwii:"Война",nav_leader:"Руководство",nav_legacy:"Наследие",nav_family:"Семья",
+hero_subtitle:"Советский узбекский государственный деятель",hero_name:"Аминджан Ирматович Ниязов",hero_epithet:"От сына издольщика из маленького кишлака до руководителя одной из крупнейших советских республик — жизнь, посвящённая созиданию.",
+bio_title:"Биография",
+bio_p1:"Аминджан Ирматович Ниязов (1903–1973) прошёл путь от самых скромных истоков до одного из наиболее значимых руководителей в истории Советского Узбекистана. Родившийся в кишлаке Ак-Тепе близ Маргилана, сын Ирмата-ака — издольщика, трудившегося на землях богатых баев, — он стал 8-м Первым секретарём Компартии Узбекистана, Председателем Верховного Совета и Народным комиссаром финансов в годы Великой Отечественной войны.",
+bio_p2:"Его жизнь охватила всю дугу советской истории в Средней Азии: от революции и гражданской войны, через индустриализацию, Вторую мировую войну, послевоенное восстановление и сложную политику хрущёвской эпохи. На каждом этапе он проявил себя строителем — заводов, водохранилищ, школ и институтов.",
+bio_p3:"Он проработал семнадцать лет без отпуска — свидетельство неутомимой преданности делу, которая в итоге подорвала его здоровье. Удостоенный звания строителя республики в последние недели жизни, он скончался в декабре 1973 года, оставив после себя преображённый Узбекистан.",
+infobox_header:"А. И. Ниязов",
+ib_born_label:"Родился",ib_born:"7 ноября 1903, Ак-Тепе, близ Маргилана",
+ib_died_label:"Умер",ib_died:"26 декабря 1973, Ташкент",
+ib_nation_label:"Национальность",ib_nation:"Узбек",
+ib_party_label:"Партия",ib_party:"КПСС (с 1925)",
+ib_edu_label:"Образование",ib_edu:"Всесоюзная промышленная академия, Москва (1930–34)",
+ib_office_label:"Должность",ib_office:"8-й Первый секретарь ЦК КП Узбекистана (1950–55)",
+ib_spouse_label:"Супруга",ib_spouse:"Салимахон Ниязова",
+ib_children_label:"Дети",ib_children:"Адхамджон, Халида, Рустам, Лола",
+early_title:"Ранние годы",
+early_p1:"Амин Ниязов родился 7 ноября 1903 года в кишлаке Ак-Тепе близ древнего города Маргилан в Ферганской долине. Его отец, Ирмат-ака, был издольщиком — работал на земле богатых землевладельцев, никогда не имея собственной.",
+early_p2:"С детства юный Амин проявлял исключительные способности к физике и математике. Образование он начал в старинном мактабе, затем перешёл в современную школу. Потрясения Гражданской войны принесли голод в Ферганскую долину — он выживал на траве и жмыхе. Но даже подростком он участвовал в раздаче конфискованного зерна голодающим семьям.",
+early_p3:"В шестнадцать лет он вступил в комсомол и начал работать в продовольственном комитете Ферганского района. Вскоре он поступил на службу в Туркестанскую ЧК и ГПУ, затем перешёл в финансовое управление, став начальником финотдела Ферганской области. В 1920-е годы он лично проводил земельно-водную реформу, отбирая землю и оросительные каналы у баев и передавая их безземельным дехканам.",
+early_quote:"Некоторые крестьяне, под влиянием религии, отказывались от земли: «Умру с голоду, но землю бая не возьму». Однако реформа шла вперёд, преображая жизни тысяч людей.",
+edu_title:"Образование и промышленность",
+edu_p1:"В 1930 году Ниязов был направлен во Всесоюзную промышленную академию в Москве — престижное учебное заведение, готовившее будущих промышленных руководителей Советского Союза. Там он стал однокурсником Никиты Хрущёва, будущего руководителя СССР. Учился он отлично, блистая в дисциплинах «детали машин», «сопротивление материалов» и «теоретическая механика».",
+edu_p2:"Перед отъездом в Москву Акмаль Икрамов, тогдашний Первый секретарь ЦК КП Узбекистана, предложил ему место среди 70 молодых людей для учёбы в Германии. Ниязов отказался — он не мог оставить пожилую мать и молодую семью.",
+edu_p3:"Окончив академию в 1934 году, он добровольно отправился работать простым десятником на строительство Чирчикского электрохимического комбината — одного из крупнейших промышленных объектов Средней Азии. Благодаря мастерству и преданности делу он вырос от десятника до начальника участка, затем до главного инженера и, наконец, до руководителя строительной контрольной комиссии Совнаркома.",
+edu_p4:"Он также отстаивал развитие текстильной промышленности в Фергане, опровергнув экспертов, утверждавших, что климат региона непригоден для фабрик. Он направил около 900 молодых рабочих на обучение в текстильные центры России; вернувшись, они составили кадры новых предприятий Узбекистана.",
+wwii_title:"Великая Отечественная война",
+wwii_p1:"Когда нацистская Германия напала на Советский Союз в 1941 году, Узбекистан стал важнейшей тыловой базой для всего военного усилия. Миллионы эвакуированных хлынули в республику вместе с целыми заводами, демонтированными и отправленными на восток в эшелонах. Как Народный комиссар финансов Узбекской ССР (1940–1946), Ниязов нёс огромную ответственность за финансирование этого промышленного преобразования.",
+wwii_p2:"Его самым выдающимся достижением стало обеспечение запуска Чкаловского авиазавода — эвакуированного из Европейской России — всего за 42 дня после прибытия в Узбекистан. Под его финансовым руководством за годы войны было построено и введено в строй 280 новых промышленных предприятий, положивших начало совершенно новым отраслям: авиастроению, станкостроению, тяжёлой промышленности и металлургии.",
+wwii_stat1:"Дней на запуск Чкаловского авиазавода",
+wwii_stat2:"Новых предприятий за годы войны",
+wwii_stat3:"Годы на посту Наркомфина",
+wwii_p3:"Ниязов действовал на высшем стратегическом эшелоне военного усилия республики, обеспечивая направление каждого рубля туда, где он был нужнее всего. Его работа помогла превратить Узбекистан из преимущественно аграрной республики в промышленную державу.",
+rise_title:"Путь к власти",
+rise_p1:"После войны Ниязов занимал пост заместителя Председателя Совета Министров (1946–47), затем был возведён на должность Председателя Президиума Верховного Совета Узбекской ССР (1947–1950) — фактически главы государства. На этом посту он инициировал строительство Каттакурганского и Чимкурганского водохранилищ — масштабных ирригационных проектов, преобразивших сельское хозяйство Самаркандской, Бухарской и Хорезмской областей.",
+rise_p2:"Он руководил освоением земель Центральной Ферганы и Голодной степи, подводя воду к засушливым территориям и обеспечивая расширение хлопководства, которое определило экономику Узбекистана на десятилетия вперёд. В апреле 1950 года он был назначен 8-м Первым секретарём ЦК Компартии Узбекистана, сменив Усмана Юсупова.",
+leader_title:"Первый секретарь Узбекистана (1950–1955)",
+leader_p1:"Как самая влиятельная фигура в Узбекистане, Ниязов проводил амбициозную программу модернизации. В 1950 году Узбекистан впервые в истории собрал 3 миллиона тонн хлопка-сырца — веха, потребовавшая не только сельскохозяйственного труда, но и революции в механизации.",
+leader_stat1_num:"3 млн",leader_stat1:"Тонн хлопка — исторический рекорд",
+leader_stat2:"Хлопкоуборочных машин задействовано",
+leader_stat3:"Новых школ по всей республике",
+leader_p2:"Он обеспечил развёртывание 22 428 хлопкоуборочных машин ШМ-48, произведённых на заводе «Ташсельмаш» в Ташкенте. Построил 42 школы, обеспечил полными комплектами учебников и учебных пособий, организовал государственное питание для 1000 воспитанников школ-интернатов. Были созданы новые медицинские учреждения: Медицинский институт в Андижане, Институт краевой медицины, НИИ онкологии и радиологии.",
+leader_p3:"Ускорилось промышленное строительство: авторемонтный завод в Андижане, дизельная электростанция в Бухаре, Наманганская ГЭС, теплоэлектростанция в Карши и Ангренская ГРЭС. Он создал «пригородные зоны» вокруг городов для обеспечения овощами и молочными продуктами, закупил 3000 породистых тёлок за рубежом для улучшения качества скота.",
+foreign_title:"Внешняя политика",
+foreign_p1:"В тесном сотрудничестве с Вячеславом Молотовым, министром иностранных дел СССР, Ниязов помогал устанавливать контакты с лидерами Бандунгской конференции — собрания 29 неприсоединившихся стран, изменившего дипломатию холодной войны. Узбекистан под его руководством стал витриной советского развития в Азии.",
+foreign_p2:"Он организовал первые визиты в Советский Союз — в том числе в Узбекистан — Джавахарлала Неру и его дочери Индиры Ганди в 1955 году, а также У Ну, премьер-министра Бирмы. Эти визиты были частью масштабной дипломатической кампании, включавшей официальную советскую делегацию Булганина и Хрущёва в Индию, Бирму и Афганистан.",
+fall_title:"Падение",
+fall_p1:"22 декабря 1955 года, на чрезвычайном пленуме ЦК, Ниязов был снят с поста Первого секретаря. Представители Москвы прибыли с обвинениями в недостаточном росте производства хлопка. В тот же день он был назначен министром коммунального хозяйства — резкое понижение.",
+fall_p2:"Но истинные причины были глубже, чем урожайность хлопка. Ниязов отказался вступать в какие-либо политические группировки. Он не поддержал интриги Хрущёва в бурной борьбе за власть после смерти Сталина — и это, по свидетельству знавших его людей, стало подсознательным мотивом его отстранения. По иронии судьбы, Хрущёв — его бывший однокурсник по Промакадемии — подписал его политическую судьбу.",
+fall_quote:"Он не вступал в группировки. Не поддерживал интриги. И за это заплатил цену, которую платят честные люди в политике.",
+legacy_title:"Наследие",
+legacy_p1:"Даже после отставки Ниязов продолжал служить. На посту министра коммунального хозяйства он первым организовал снабжение природным газом жителей Узбекистана — впервые обычные граждане получили доступ к этому ресурсу. На пенсии он участвовал в строительстве автомагистрали Ташкент—Коканд.",
+legacy_p2:"В ноябре 1973 года, в день 70-летия, ему было присвоено звание «Заслуженный строитель Узбекской ССР» — достойное признание для человека, посвятившего всю жизнь созиданию. Он скончался в декабре 1973 года в Ташкенте. Семнадцать лет без единого отпуска. Построенные им водохранилища по-прежнему орошают поля Узбекистана. Профинансированные им заводы стоят. Открытые им школы учат.",
+awards_title:"Награды и звания",
+award1:"Два ордена Ленина",award2:"Три ордена Трудового Красного Знамени",award3:"Два ордена Красной Звезды",award4:"Заслуженный строитель Узбекской ССР (1973)",award5:"Почётная грамота за земельно-водную реформу",
+family_title:"Семья",
+family_intro:"За каждым государственным деятелем стоит семья. Салимахон Ниязова была хранительницей семейного очага — верной помощницей и надёжной опорой на протяжении десятилетий служения и самоотречения.",
+fam_wife_name:"Салимахон Ниязова",fam_wife_desc:"Супруга — преданная спутница через десятилетия государственной службы",
+fam_c1_name:"Адхамджон Ниязов (1930–1999)",fam_c1_desc:"Доцент Политехнического института",
+fam_c2_name:"Халида Ниязова (1933–1996)",fam_c2_desc:"Врач",
+fam_c3_name:"Рустам Ниязов (род. 1938)",fam_c3_desc:"Кандидат геолого-минералогических наук, Генеральный директор НИИ «Узбекгидрогеология»",
+fam_c4_name:"Лола Ниязова (род. 1940)",fam_c4_desc:"Преподаватель русского языка и литературы",
+footer_memory:"Светлой памяти Аминджана Ирматовича Ниязова (1903–1973)",
+footer_copy:"© Мемориал семьи Ниязовых"
+},
+uz:{
+nav_bio:"Tarjimayi hol",nav_early:"Bolalik",nav_edu:"Ta'lim",nav_wwii:"Urush",nav_leader:"Rahbarlik",nav_legacy:"Meros",nav_family:"Oila",
+hero_subtitle:"Sovet oʻzbek davlat arbobi",hero_name:"Aminjon Irmatovich Niyozov",hero_epithet:"Kichik qishloqdagi chorakorning oʻgʻlidan ulkan sovet respublikasi rahbarigacha — millatni qurishga bagʻishlangan hayot.",
+bio_title:"Tarjimayi hol",
+bio_p1:"Aminjon Irmatovich Niyozov (1903–1973) eng oddiy oilakorlikdan Sovet Oʻzbekistoni tarixidagi eng muhim rahbarlardan biriga aylandi. Margilon yaqinidagi Oqtepa qishlogʻida tugʻilgan, boy boylarning yerlarida mehnat qilgan chorakor Irmat-akaning oʻgʻli — u Oʻzbekiston Kompartiyasining 8-Birinchi kotibi, Oliy Kengash Raisi va Buyuk Vatan urushi yillarida Moliya xalq komissari boʻldi.",
+bio_p2:"Uning hayoti Markaziy Osiyodagi sovet tarixining butun yoyini qamrab oldi: inqilob va fuqarolar urushidan sanoatlashtirish, Ikkinchi jahon urushi, urushdan keyingi tiklanish va Xrushchyov davrining murakkab siyosatiga qadar. Har bir bosqichda u oʻzini quruvchi sifatida koʻrsatdi — zavodlar, suv omborlari, maktablar va institutlar quruvchi.",
+bio_p3:"U oʻn yetti yil ta'tilsiz ishladi — bu fidoyilik oxir-oqibat salomatligiga zarar yetkazdi. Hayotining soʻnggi haftalarida respublika quruvchisi unvoni bilan taqdirlangan holda, u 1973-yil dekabrida vafot etdi va oʻzidan oʻzgartirilgan Oʻzbekistonni qoldirdi.",
+infobox_header:"A. I. Niyozov",
+ib_born_label:"Tugʻilgan",ib_born:"1903-yil 7-noyabr, Oqtepa, Margilon yaqinida",
+ib_died_label:"Vafot etgan",ib_died:"1973-yil 26-dekabr, Toshkent",
+ib_nation_label:"Millati",ib_nation:"Oʻzbek",
+ib_party_label:"Partiya",ib_party:"KPSS (1925-yildan)",
+ib_edu_label:"Ta'lim",ib_edu:"Butunittifoq sanoat akademiyasi, Moskva (1930–34)",
+ib_office_label:"Lavozim",ib_office:"Oʻzbekiston KP 8-Birinchi kotibi (1950–55)",
+ib_spouse_label:"Rafiqasi",ib_spouse:"Salimaxon Niyozova",
+ib_children_label:"Farzandlari",ib_children:"Adxamjon, Xolida, Rustam, Lola",
+early_title:"Bolalik yillari",
+early_p1:"Amin Niyozov 1903-yil 7-noyabrda Fargʻona vodiysidagi qadimiy Margilon shahri yaqinidagi Oqtepa qishlogʻida tugʻildi. Otasi Irmat-aka chorakor — izdolshchik boʻlib, boy yeregalari yerlarida ishlagan, hech qachon oʻz yeriga ega boʻlmagan.",
+early_p2:"Bolaligidan yosh Amin fizika va matematikaga ajoyib qobiliyat koʻrsatdi. Ta'limni eski uslubdagi maktabda boshladi, soʻng zamonaviy maktabga oʻtdi. Fuqarolar urushining talotopi Fargʻona vodiysiga ocharchilik olib keldi; u oʻt va jmix bilan kun koʻrdi. Shunga qaramay, oʻsmir yoshida musodara qilingan donni och oilalarga tarqatish ishlarida qatnashdi.",
+early_p3:"Atigi oʻn olti yoshida u komsomolga qoʻshildi va Fargʻona tuman oziq-ovqat qoʻmitasida ishlay boshladi. Tez orada u Turkiston ChK va GPU xizmatiga oʻtdi, keyin moliya boshqarmasiga koʻchdi va Fargʻona viloyati moliya boʻlimi boshligʻi boʻldi. 1920-yillarda u shaxsan yer-suv islohotini amalga oshirdi — boylardan yer va sugʻorish kanallarini olib, yersiz dehqonlarga tarqatdi.",
+early_quote:"Baʼzi dehqonlar din taʼsirida yerdan bosh tortdi: «Ochlikdan oʻlaman, lekin boyning yerini olmayman». Shunga qaramay, islohot davom etdi va minglab hayotlarni oʻzgartirdi.",
+edu_title:"Ta'lim va sanoat",
+edu_p1:"1930-yilda Niyozov Moskvadagi Butunittifoq sanoat akademiyasiga yuborildi — Sovet Ittifoqi kelajak sanoat rahbarlarini tayyorlaydigan nufuzli muassasa. U yerda u Sovet Ittifoqining kelajak rahbari Nikita Xrushchyovning kursoshiga aylandi. U aʼlo baholar bilan oʻqidi, «mashina detallari», «materiallar qarshiligi» va «nazariy mexanika» fanlarida ajralib turdi.",
+edu_p2:"Moskvaga ketishdan oldin, Oʻzbekiston KP Birinchi kotibi Akmal Ikromov unga Germaniyaga oʻqishga boradigan 70 yoshlar orasida joy taklif qildi. Niyozov rad etdi — u keksa onasi va yosh oilasini tashlab ketolmadi.",
+edu_p3:"1934-yilda akademiyani tamomlagan soʻng, u koʻngilli ravishda Chirchiq elektrokimyo kombinati qurilishiga oddiy desyatnik sifatida bordi — Markaziy Osiyodagi eng yirik sanoat loyihalaridan biri. Mahorat va fidoyilik tufayli u desyatnikdan uchastka boshligʻiga, soʻng bosh muhandisga va nihoyat Xalq Komissarlari Kengashining qurilish nazorat komissiyasi rahbarigacha koʻtarildi.",
+edu_p4:"U Fargʻonada toʻqimachilik sanoatini ham rivojlantirdi, mintaqaning iqlimi fabrikalar uchun yaroqsiz degan mutaxassislarni notoʻgʻri ekanini isbotladi. U taxminan 900 yosh ishchini Rossiya toʻqimachilik markazlariga oʻqishga yubordi; ular qaytib kelib Oʻzbekistonning yangi korxonalari kadrlari boʻldi.",
+wwii_title:"Buyuk Vatan urushi",
+wwii_p1:"1941-yilda fashistlar Germaniyasi Sovet Ittifoqiga hujum qilganida, Oʻzbekiston butun urush harakati uchun muhim orqa baza boʻldi. Millionlab evakuatsiya qilinganlar respublikaga oqib keldi, ular bilan birga butun zavodlar soʻkilib sharqqa yuborildi. Oʻzbekiston SSR Moliya xalq komissari sifatida (1940–1946), Niyozov bu sanoat oʻzgarishini moliyalashtirish ulkan masʼuliyatini zimmasiga oldi.",
+wwii_p2:"Uning eng ajoyib yutugʻi Chkalov aviatsiya zavodining — Yevropa Rossiyasidan evakuatsiya qilingan — Oʻzbekistonga kelganidan atigi 42 kun ichida ishga tushirilishini taʼminlash boʻldi. Uning moliyaviy rahbarligi ostida urush yillarida 280 ta yangi sanoat korxonasi qurilib ishga tushirildi, butunlay yangi tarmoqlar — aviatsiya, dastgohsozlik, ogʻir sanoat va metallurgiya paydo boʻldi.",
+wwii_stat1:"Kun — Chkalov aviazavodi ishga tushgunicha",
+wwii_stat2:"Urush yillarida qurilgan yangi korxonalar",
+wwii_stat3:"Yillar Moliya xalq komissari lavozimida",
+wwii_p3:"Niyozov respublika urush harakatining eng yuqori strategik poglonasida faoliyat yuritdi, har bir soʻmning eng zarur joyga yoʻnaltirilishini taʼminladi. Uning ishi Oʻzbekistonni asosan qishloq xoʻjaligi respublikasidan sanoat kuchiga aylantirishga yordam berdi.",
+rise_title:"Hokimiyatga yoʻl",
+rise_p1:"Urushdan soʻng Niyozov Vazirlar Kengashi rais oʻrinbosari (1946–47) lavozimida xizmat qildi, soʻng Oʻzbekiston SSR Oliy Kengashi Prezidiumi Raisi (1947–1950) lavozimiga koʻtarildi — amalda Oʻzbekiston davlat rahbari. Bu lavozimda u Qattaqoʻrgʻon va Chimqoʻrgʻon suv omborlarining qurilishini boshladi — Samarqand, Buxoro va Xorazm viloyatlari qishloq xoʻjaligini oʻzgartirgan ulkan irrigatsiya loyihalari.",
+rise_p2:"U Markaziy Fargʻona va Mirzachoʻl yerlarini oʻzlashtirish ishlariga rahbarlik qildi, quruq yerlarga suv yetkazdi va paxta yetishtirishni kengaytirishni taʼminladi — bu Oʻzbekiston iqtisodiyotini oʻnlab yillar davomida belgiladi. 1950-yil aprelda u Oʻzbekiston Kompartiyasi MK ning 8-Birinchi kotibi etib tayinlandi, Usmon Yusupovni almashtirib.",
+leader_title:"Oʻzbekiston Birinchi kotibi (1950–1955)",
+leader_p1:"Oʻzbekistondagi eng nufuzli shaxs sifatida, Niyozov keng koʻlamli modernizatsiya dasturini amalga oshirdi. 1950-yilda Oʻzbekiston tarixida birinchi marta 3 million tonna paxta xom ashyosi yigʻdi — bu faqat qishloq xoʻjaligi mehnati emas, balki mexanizatsiyadagi inqilobni talab qilgan muhim voqea edi.",
+leader_stat1_num:"3 mln",leader_stat1:"Tonna paxta — tarixiy rekord",
+leader_stat2:"Paxta yigʻish mashinalari joylashtirildi",
+leader_stat3:"Respublika boʻylab yangi maktablar qurildi",
+leader_p2:"U Toshkentdagi «Toshselmash» zavodida ishlab chiqarilgan 22 428 ta ShM-48 paxta yigʻish mashinasining joylashtirilishini taʼminladi. 42 ta maktab qurdi, toʻliq darslik va oʻquv qurollari bilan taʼminladi, 1000 internat oʻquvchisi uchun davlat ovqatlanishini tashkil qildi. Yangi tibbiyot muassasalari yaratildi: Andijon Tibbiyot instituti, Hududiy tibbiyot instituti va Onkologiya va radiologiya ilmiy-tadqiqot instituti.",
+leader_p3:"Sanoat qurilishi tezlashdi: Andijonda avtoremant zavodi, Buxoroda dizel elektrstansiyasi, Namangan GES, Qarshida issiqlik elektrstansiyasi va Angren GRES. U shaharlar atrofida sabzavot va sut mahsulotlari bilan taʼminlash uchun «shahar atrofi zonalari» yaratdi va chorvachilik sifatini yaxshilash uchun chet eldan 3000 zotli buzoq sotib oldi.",
+foreign_title:"Tashqi siyosat",
+foreign_p1:"SSSR Tashqi ishlar vaziri Vyacheslav Molotov bilan yaqin hamkorlikda Niyozov Bandung konferensiyasi rahbarlari — Sovuq urush diplomatiyasini oʻzgartirgan 29 qoʻshilmagan davlat yigʻilishi — bilan aloqalar oʻrnatishga yordam berdi. Uning rahbarligi ostida Oʻzbekiston Osiyoda sovet taraqqiyotining koʻrgazmasiga aylandi.",
+foreign_p2:"U 1955-yilda Sovet Ittifoqiga — jumladan Oʻzbekistonga — Javoharlal Neru va qizi Indira Gandining, shuningdek Birma Bosh vaziri U Nuning birinchi tashriflarini tashkil qildi. Bu tashriflar Bulganin va Xrushchyovning Hindiston, Birma va Afgʻonistonga rasmiy sovet delegatsiyasini ham oʻz ichiga olgan keng koʻlamli diplomatik kampaniyaning bir qismi edi.",
+fall_title:"Yiqilish",
+fall_p1:"1955-yil 22-dekabrda, MK favqulodda plenumida, Niyozov Birinchi kotiblik lavozimidan ozod qilindi. Moskva vakillari paxta ishlab chiqarishning yetarli oʻsmaganligida ayblab keldi. Oʻsha kuni u kommunal xoʻjalik vaziri etib tayinlandi — keskin pasayish.",
+fall_p2:"Ammo haqiqiy sabablar paxta hosilidan chuqurroq edi. Niyozov hech qanday siyosiy guruh yoki fraksiyaga qoʻshilishdan bosh tortgan edi. U Stalinning vafotidan keyingi gʻalayonli hokimiyat kurashida Xrushchyovning fitna-fasodlarini qoʻllab-quvvatlamagan edi — va uni bilganlarning fikricha, bu uning chetlatilishining ongsiz motivi edi. Qizigʻi shundaki, Xrushchyov — uning Sanoat akademiyasidagi sobiq kursoshi — uning siyosiy taqdirini imzoladi.",
+fall_quote:"U fraksiyalarga qoʻshilmadi. Fitnalarni qoʻllab-quvvatlamadi. Va buning uchun u halol odamlar siyosatda toʻlaydigan narxni toʻladi.",
+legacy_title:"Meros",
+legacy_p1:"Lavozimdan chetlatilganidan keyin ham Niyozov xizmat qilishda davom etdi. Kommunal xoʻjalik vaziri sifatida u Oʻzbekiston aholisiga tabiiy gaz yetkazib berishni birinchi boʻlib yoʻlga qoʻydi — oddiy fuqarolar bu resursdan birinchi marta foydalanish imkoniyatiga ega boʻldi. Nafaqaga chiqqach, u Toshkent-Qoʻqon avtomobil yoʻlining qurilishiga hissa qoʻshdi.",
+legacy_p2:"1973-yil noyabrda, 70 yoshida, unga «Oʻzbekiston SSR Xizmat koʻrsatgan quruvchisi» unvoni berildi — butun umrini qurishga bagʻishlagan odam uchun munosib eʼtirof. U 1973-yil dekabrda Toshkentda vafot etdi. Oʻn yetti yil bitta ham taʼtilsiz. U qurgan suv omborlari hamon Oʻzbekiston dalalarini sugʻoradi. U moliyalashtirgan zavodlar hamon turibdi. U ochgan maktablar hamon oʻqitadi.",
+awards_title:"Mukofotlar va unvonlar",
+award1:"Ikki marta Lenin ordeni",award2:"Uch marta Mehnat Qizil Bayrogʻi ordeni",award3:"Ikki marta Qizil Yulduz ordeni",award4:"Oʻzbekiston SSR Xizmat koʻrsatgan quruvchisi (1973)",award5:"Yer-suv islohoti uchun Faxriy yorliq",
+family_title:"Oila",
+family_intro:"Har bir davlat arbobining ortida oila turadi. Salimaxon Niyozova oila oʻchogʻining saqlovchisi — oʻnlab yillik xizmat va fidoyilik davomida sodiq yordamchi va ishonchli tayanch edi.",
+fam_wife_name:"Salimaxon Niyozova",fam_wife_desc:"Rafiqasi — oʻnlab yillik davlat xizmati davomida sodiq hamroh",
+fam_c1_name:"Adxamjon Niyozov (1930–1999)",fam_c1_desc:"Politexnika institutining dotsenti",
+fam_c2_name:"Xolida Niyozova (1933–1996)",fam_c2_desc:"Shifokor",
+fam_c3_name:"Rustam Niyozov (tugʻ. 1938)",fam_c3_desc:"Geologiya-mineralogiya fanlari nomzodi, «Oʻzbekgidrogeologiya» ilmiy-tadqiqot instituti bosh direktori",
+fam_c4_name:"Lola Niyozova (tugʻ. 1940)",fam_c4_desc:"Rus tili va adabiyoti oʻqituvchisi",
+footer_memory:"Aminjon Irmatovich Niyozov (1903–1973) yorqin xotirasiga",
+footer_copy:"© Niyozovlar oilasi memorial sayti"
+},
+fr:{
+nav_bio:"Biographie",nav_early:"Jeunesse",nav_edu:"Éducation",nav_wwii:"Guerre",nav_leader:"Direction",nav_legacy:"Héritage",nav_family:"Famille",
+hero_subtitle:"Homme d'État soviétique ouzbek",hero_name:"Amine Irmatovitch Niyazov",hero_epithet:"Du fils d'un métayer dans un petit kichlak au dirigeant de l'une des plus grandes républiques soviétiques — une vie consacrée à l'édification d'une nation.",
+bio_title:"Biographie",
+bio_p1:"Amindjan Irmatovitch Niyazov (1903–1973) s'éleva des origines les plus modestes pour devenir l'un des dirigeants les plus marquants de l'histoire de l'Ouzbékistan soviétique. Né dans le kichlak d'Ak-Tépé, près de Marguilan, fils d'Irmat-aka — un métayer travaillant les terres de riches propriétaires —, il devint le 8ᵉ Premier secrétaire du Parti communiste d'Ouzbékistan, Président du Soviet suprême et Commissaire du peuple aux Finances pendant la Grande Guerre patriotique.",
+bio_p2:"Sa vie embrassa l'arc entier de l'histoire soviétique en Asie centrale : de la révolution et la guerre civile, à travers l'industrialisation, la Seconde Guerre mondiale, la reconstruction d'après-guerre et la politique complexe de l'ère Khrouchtchev. À chaque étape, il se révéla bâtisseur — d'usines, de réservoirs, d'écoles et d'institutions.",
+bio_p3:"Il travailla dix-sept ans sans prendre de vacances, témoignage d'un dévouement inlassable qui finit par miner sa santé. Honoré du titre de bâtisseur de la république dans les dernières semaines de sa vie, il s'éteignit en décembre 1973, laissant derrière lui un Ouzbékistan transformé.",
+infobox_header:"A. I. Niyazov",
+ib_born_label:"Né",ib_born:"7 novembre 1903, Ak-Tépé, près de Marguilan",
+ib_died_label:"Décédé",ib_died:"26 décembre 1973, Tachkent",
+ib_nation_label:"Nationalité",ib_nation:"Ouzbek",
+ib_party_label:"Parti",ib_party:"PCUS (depuis 1925)",
+ib_edu_label:"Formation",ib_edu:"Académie industrielle pansoviétique, Moscou (1930–34)",
+ib_office_label:"Fonction",ib_office:"8ᵉ Premier secrétaire du PC d'Ouzbékistan (1950–55)",
+ib_spouse_label:"Épouse",ib_spouse:"Salimakhon Niyazova",
+ib_children_label:"Enfants",ib_children:"Adkhamjon, Khalida, Roustam, Lola",
+early_title:"Les années de jeunesse",
+early_p1:"Amine Niyazov naquit le 7 novembre 1903 dans le kichlak d'Ak-Tépé, près de l'antique cité de Marguilan, dans la vallée de Fergana. Son père, Irmat-aka, était métayer — un izdolchtchik — qui cultivait la terre de riches propriétaires sans jamais posséder la sienne.",
+early_p2:"Dès l'enfance, le jeune Amine manifesta des aptitudes exceptionnelles en physique et en mathématiques. Il commença son éducation dans un maktab traditionnel avant de passer à une école moderne. Les bouleversements de la guerre civile apportèrent la famine dans la vallée de Fergana ; il survécut en se nourrissant d'herbe et de tourteau. Pourtant, même adolescent, il participa à la distribution de céréales confisquées aux familles affamées.",
+early_p3:"À seize ans à peine, il rejoignit le Komsomol et commença à travailler au comité alimentaire du district de Fergana. Il entra bientôt au service de la Tchéka et du GPU du Turkestan — les premiers organes de sécurité soviétiques — avant de se tourner vers l'administration financière, devenant chef du département des Finances de l'oblast de Fergana. Dans les années 1920, il mit personnellement en œuvre la réforme agraire et hydraulique, confisquant terres et canaux d'irrigation aux baïs pour les redistribuer aux dékhans sans terre.",
+early_quote:"Certains paysans, sous l'influence religieuse, refusèrent la terre : « Je mourrai de faim, mais je ne prendrai pas la terre du baï. » Pourtant, la réforme poursuivit sa marche, transformant la vie de milliers de personnes.",
+edu_title:"Éducation et industrie",
+edu_p1:"En 1930, Niyazov fut envoyé à l'Académie industrielle pansoviétique de Moscou — l'institution prestigieuse où l'Union soviétique formait ses futurs dirigeants industriels. Il y devint condisciple de Nikita Khrouchtchev, le futur dirigeant de l'URSS. Il étudia avec distinction, excellant dans les disciplines « organes de machines », « résistance des matériaux » et « mécanique théorique ».",
+edu_p2:"Avant de partir pour Moscou, Akmal Ikramov, alors Premier secrétaire du PC d'Ouzbékistan, lui avait offert une place parmi 70 jeunes gens envoyés étudier en Allemagne. Niyazov déclina — il ne pouvait abandonner sa mère âgée et sa jeune famille.",
+edu_p3:"Diplômé en 1934, il se porta volontaire comme simple contremaître sur le chantier du combinat électrochimique de Tchirtchik — l'un des plus grands projets industriels d'Asie centrale. Par son savoir-faire et son dévouement, il s'éleva de contremaître à chef de chantier, puis à ingénieur en chef, et enfin à président de la commission de contrôle des travaux du Conseil des commissaires du peuple.",
+edu_p4:"Il promut également l'industrie textile à Fergana, réfutant les experts qui prétendaient que le climat de la région était inadapté aux usines. Il envoya environ 900 jeunes ouvriers se former dans les centres textiles de Russie ; à leur retour, ils constituèrent les cadres des nouvelles entreprises de l'Ouzbékistan.",
+wwii_title:"La Grande Guerre patriotique",
+wwii_p1:"Lorsque l'Allemagne nazie envahit l'Union soviétique en 1941, l'Ouzbékistan devint une base arrière cruciale pour l'effort de guerre. Des millions d'évacués affluèrent dans la république, accompagnés d'usines entières démontées et acheminées vers l'est par wagons. En tant que Commissaire du peuple aux Finances de la RSS d'Ouzbékistan (1940–1946), Niyazov assuma l'immense responsabilité de financer cette transformation industrielle.",
+wwii_p2:"Son exploit le plus remarquable fut de rendre opérationnelle l'usine d'aviation Tchkalov — évacuée de Russie européenne — en seulement 42 jours après son arrivée en Ouzbékistan. Sous sa gouvernance financière, 280 nouvelles entreprises industrielles furent construites et mises en service pendant les années de guerre, donnant naissance à des industries entièrement nouvelles : aviation, machines-outils, industrie lourde et métallurgie.",
+wwii_stat1:"Jours pour lancer l'usine d'aviation Tchkalov",
+wwii_stat2:"Nouvelles entreprises construites pendant la guerre",
+wwii_stat3:"Années comme Commissaire aux Finances",
+wwii_p3:"Niyazov opéra à l'échelon stratégique le plus élevé de l'effort de guerre républicain, veillant à ce que chaque rouble fût déployé là où il comptait le plus. Son travail contribua à transformer l'Ouzbékistan d'une république essentiellement agricole en une puissance industrielle.",
+rise_title:"L'ascension au pouvoir",
+rise_p1:"Après la guerre, Niyazov occupa le poste de vice-président du Conseil des ministres (1946–47), puis fut élevé à la présidence du Présidium du Soviet suprême de la RSS d'Ouzbékistan (1947–1950) — de facto chef de l'État. Dans ce rôle, il lança la construction des réservoirs de Kattakourgan et de Chimkourgan, projets d'irrigation massifs qui transformèrent l'agriculture des régions de Samarcande, Boukhara et Khorezm.",
+rise_p2:"Il supervisa la mise en valeur des terres de la Fergana centrale et de la Steppe de la faim (Golodnaïa Step), apportant l'eau aux terres arides et permettant l'expansion de la culture du coton qui devait définir l'économie ouzbèke pour les décennies à venir. En avril 1950, il fut nommé 8ᵉ Premier secrétaire du Comité central du Parti communiste d'Ouzbékistan, succédant à Ousman Youssoupov.",
+leader_title:"Premier secrétaire de l'Ouzbékistan (1950–1955)",
+leader_p1:"Figure la plus puissante de l'Ouzbékistan, Niyazov mena un programme ambitieux de modernisation. En 1950, l'Ouzbékistan récolta pour la première fois de son histoire 3 millions de tonnes de coton brut — un jalon qui exigea non seulement un labeur agricole mais une révolution dans la mécanisation.",
+leader_stat1_num:"3 M",leader_stat1:"Tonnes de coton — une première historique",
+leader_stat2:"Machines de récolte du coton déployées",
+leader_stat3:"Nouvelles écoles à travers la république",
+leader_p2:"Il supervisa le déploiement de 22 428 machines de récolte du coton ChM-48, fabriquées à l'usine Tachselmach de Tachkent. Il fit construire 42 écoles, fournit manuels et fournitures scolaires complets, et organisa la restauration publique pour 1 000 élèves d'internats. De nouveaux établissements médicaux virent le jour : un Institut de médecine à Andijan, l'Institut de médecine régionale et l'Institut de recherche en oncologie et radiologie.",
+leader_p3:"La construction industrielle s'accéléra : une usine de réparation automobile à Andijan, une centrale diesel à Boukhara, la centrale hydroélectrique de Namangan, une centrale thermique à Karchi et la GRES d'Angren. Il établit des « zones suburbaines » autour des villes pour assurer l'approvisionnement en légumes et produits laitiers, et acquit 3 000 génisses de race à l'étranger pour améliorer la qualité du cheptel.",
+foreign_title:"Politique étrangère",
+foreign_p1:"En étroite collaboration avec Viatcheslav Molotov, ministre des Affaires étrangères de l'URSS, Niyazov contribua à établir des contacts avec les dirigeants de la Conférence de Bandoung — le rassemblement de 29 nations non alignées qui remodela la diplomatie de la Guerre froide. Sous sa direction, l'Ouzbékistan devint une vitrine du développement soviétique en Asie.",
+foreign_p2:"Il organisa les premières visites en Union soviétique — y compris en Ouzbékistan — de Jawaharlal Nehru et de sa fille Indira Gandhi en 1955, ainsi que de U Nu, Premier ministre de Birmanie. Ces visites s'inscrivaient dans une offensive diplomatique plus large incluant la délégation officielle soviétique de Boulganine et Khrouchtchev en Inde, en Birmanie et en Afghanistan.",
+fall_title:"La chute",
+fall_p1:"Le 22 décembre 1955, lors d'un plénum extraordinaire du Comité central, Niyazov fut relevé de ses fonctions de Premier secrétaire. Les représentants de Moscou arrivèrent porteurs d'accusations d'insuffisance dans la production cotonnière. Le jour même, il fut nommé ministre de l'Économie communale — une rétrogradation brutale.",
+fall_p2:"Mais les véritables raisons étaient plus profondes que les rendements cotonniers. Niyazov avait refusé de rejoindre toute faction ou groupement politique. Il n'avait pas soutenu les intrigues de Khrouchtchev lors de la turbulente lutte pour le pouvoir après la mort de Staline — et cela, selon ceux qui le connaissaient, fut le motif inavoué de son éviction. Ironie du sort, Khrouchtchev — son ancien condisciple de l'Académie industrielle — scella son destin politique.",
+fall_quote:"Il ne rejoignit aucune faction. Il ne soutint aucune intrigue. Et pour cela, il paya le prix que les hommes intègres paient en politique.",
+legacy_title:"Héritage",
+legacy_p1:"Même après sa destitution, Niyazov continua de servir. En tant que ministre de l'Économie communale, il fut le pionnier de l'approvisionnement en gaz naturel des foyers ouzbeks — la première fois que les citoyens ordinaires eurent accès à cette ressource. À la retraite, il contribua à la construction de l'autoroute Tachkent-Kokand.",
+legacy_p2:"En novembre 1973, pour son 70ᵉ anniversaire, il reçut le titre de « Bâtisseur émérite de la RSS d'Ouzbékistan » — une reconnaissance méritée pour un homme qui avait consacré toute sa vie à bâtir. Il s'éteignit en décembre 1973 à Tachkent. Dix-sept ans sans une seule vacance. Les réservoirs qu'il construisit irriguent encore les champs de l'Ouzbékistan. Les usines qu'il finança sont toujours debout. Les écoles qu'il ouvrit enseignent toujours.",
+awards_title:"Distinctions et honneurs",
+award1:"Deux ordres de Lénine",award2:"Trois ordres du Drapeau rouge du Travail",award3:"Deux ordres de l'Étoile rouge",award4:"Bâtisseur émérite de la RSS d'Ouzbékistan (1973)",award5:"Diplôme d'honneur pour la réforme agraire et hydraulique",
+family_title:"Famille",
+family_intro:"Derrière chaque homme d'État se tient une famille. Salimakhon Niyazova fut la gardienne du foyer familial — une aide fidèle et un soutien indéfectible à travers des décennies de service et de sacrifice.",
+fam_wife_name:"Salimakhon Niyazova",fam_wife_desc:"Épouse — compagne dévouée à travers des décennies de service public",
+fam_c1_name:"Adkhamjon Niyazov (1930–1999)",fam_c1_desc:"Maître de conférences à l'Institut polytechnique",
+fam_c2_name:"Khalida Niyazova (1933–1996)",fam_c2_desc:"Médecin",
+fam_c3_name:"Roustam Niyazov (né en 1938)",fam_c3_desc:"Candidat ès sciences géologiques et minéralogiques, Directeur général de l'Institut de recherche Ouzbékhydrogéologie",
+fam_c4_name:"Lola Niyazova (née en 1940)",fam_c4_desc:"Professeur de langue et littérature russes",
+footer_memory:"À la mémoire d'Amindjan Irmatovitch Niyazov (1903–1973)",
+footer_copy:"© Mémorial de la famille Niyazov"
+}
+};
+
+// Language
+function setLang(lang){
+document.documentElement.lang=lang;
+localStorage.setItem('niyazov-lang',lang);
+document.querySelectorAll('[data-i18n]').forEach(el=>{
+const key=el.getAttribute('data-i18n');
+if(T[lang]&&T[lang][key]){
+el.textContent=T[lang][key];
+}
+});
+document.querySelectorAll('.lang-btn').forEach(b=>{
+b.classList.toggle('active',b.dataset.lang===lang);
+});
+}
+document.querySelectorAll('.lang-btn').forEach(b=>{
+b.addEventListener('click',()=>setLang(b.dataset.lang));
+});
+
+// Theme
+function setTheme(t){
+document.documentElement.dataset.theme=t;
+localStorage.setItem('niyazov-theme',t);
+document.getElementById('themeToggle').textContent=t==='dark'?'☀️':'🌙';
+}
+document.getElementById('themeToggle').addEventListener('click',()=>{
+setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+});
+
+// Init
+setTheme(localStorage.getItem('niyazov-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));
+setLang(localStorage.getItem('niyazov-lang')||'en');
+
+// Fade-in observer
+const obs=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+// Fallback
+setTimeout(()=>document.querySelectorAll('.fade-in').forEach(el=>el.classList.add('visible')),1500);
+</script>
+</body>
+</html>

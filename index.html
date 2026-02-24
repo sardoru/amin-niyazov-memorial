@@ -128,6 +128,25 @@ img{max-width:100%;height:auto;display:block}
 .family-card .years{font-size:var(--fs-xs);color:var(--text-muted)}
 .family-card .role{font-size:var(--fs-sm);color:var(--text-muted);margin-top:.2rem}
 
+/* PHOTO GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin:1.5rem 0}
+.gallery-item{position:relative;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border);cursor:pointer;aspect-ratio:4/3;background:var(--bg-alt);box-shadow:var(--shadow);transition:all var(--transition)}
+.gallery-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:.6rem .8rem;background:linear-gradient(transparent,rgba(0,0,0,0.8));color:#fff;font-size:var(--fs-xs);line-height:1.4}
+.gallery-item.portrait{aspect-ratio:3/4}
+.lightbox{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;padding:1rem;cursor:pointer}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:var(--radius);box-shadow:0 0 60px rgba(0,0,0,0.5)}
+.lightbox-caption{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);color:#fff;font-size:var(--fs-sm);text-align:center;max-width:600px;opacity:0.85}
+.lightbox-close{position:fixed;top:1rem;right:1.5rem;color:#fff;font-size:2rem;cursor:pointer;opacity:0.7;transition:opacity var(--transition);background:none;border:none;z-index:201}
+.lightbox-close:hover{opacity:1}
+.lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);color:#fff;font-size:2.5rem;cursor:pointer;opacity:0.6;transition:opacity var(--transition);background:none;border:none;z-index:201;padding:1rem}
+.lightbox-nav:hover{opacity:1}
+.lightbox-nav.prev{left:.5rem}
+.lightbox-nav.next{right:.5rem}
+
 /* FOOTER */
 footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:2rem 1.5rem;text-align:center;font-size:var(--fs-sm);color:var(--text-muted)}
 footer a{color:var(--gold)}
@@ -155,6 +174,7 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 <a href="#power" data-i18n="nav_power">Leadership</a>
 <a href="#fall" data-i18n="nav_fall">Dismissal</a>
 <a href="#legacy" data-i18n="nav_legacy">Legacy</a>
+<a href="#photos" data-i18n="nav_photos">Photos</a>
 <a href="#family" data-i18n="nav_family">Family</a>
 </div>
 <div class="nav-controls">
@@ -284,6 +304,43 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 </ul>
 </section>
 
+<!-- PHOTOS -->
+<section class="section" id="photos">
+<div class="section-label" data-i18n="label_photos">Historical Photographs</div>
+<h2 data-i18n="photos_title">Photo Gallery</h2>
+<p data-i18n="photos_intro">Rare photographs from the family archive and published memoirs, documenting key moments in Amin Niyazov's life and the leaders he worked alongside.</p>
+<div class="gallery-grid">
+<div class="gallery-item portrait" onclick="openLightbox(0)">
+<img src="photos/portrait-younger.jpg" alt="Amin Niyazov — official portrait" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_1">Official portrait, circa 1950s</div>
+</div>
+<div class="gallery-item portrait" onclick="openLightbox(1)">
+<img src="photos/portrait-older.jpg" alt="Amin Niyazov — later years" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_2">Later years, 1960s</div>
+</div>
+<div class="gallery-item" onclick="openLightbox(2)">
+<img src="photos/nehru-gandhi-reception.jpg" alt="Reception for Nehru and Indira Gandhi" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_3">Reception in honor of Indian PM Jawaharlal Nehru and his daughter Indira Gandhi, 1955</div>
+</div>
+<div class="gallery-item" onclick="openLightbox(3)">
+<img src="photos/opera-bulganin-khrushchev.jpg" alt="Bulganin and Khrushchev at Navoi Opera" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_4">N.A. Bulganin and N.S. Khrushchev at the Navoi Opera and Ballet Theater, Tashkent</div>
+</div>
+<div class="gallery-item" onclick="openLightbox(4)">
+<img src="photos/tashkent-airport-khrushchev.jpg" alt="Khrushchev, Niyazov, and Rashidov at Tashkent Airport" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_5">Nikita Khrushchev, Amin Niyazov, Sharaf Rashidov and others. Meeting at Tashkent Airport</div>
+</div>
+<div class="gallery-item" onclick="openLightbox(5)">
+<img src="photos/lenin-square-tribune.jpg" alt="On the tribune at Lenin Square, Tashkent" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_6">Sh. Rashidov, A. Niyazov, A. Kosygin and other leaders on the tribune at Lenin Square (now Independence Square), Tashkent</div>
+</div>
+<div class="gallery-item" onclick="openLightbox(6)">
+<img src="photos/conference-with-khrushchev.jpg" alt="At a conference with Khrushchev" loading="lazy">
+<div class="gallery-caption" data-i18n="photo_cap_7">At a party conference presidium with N.S. Khrushchev (center) and A. Niyazov (right)</div>
+</div>
+</div>
+</section>
+
 <!-- FAMILY -->
 <section class="section" id="family">
 <div class="section-label" data-i18n="label_family">Family</div>
@@ -344,6 +401,15 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 </ul></td></tr>
 </table>
 </aside>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+<button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+<button class="lightbox-nav prev" onclick="event.stopPropagation();navLightbox(-1)">&#8249;</button>
+<img src="" alt="Gallery photo">
+<button class="lightbox-nav next" onclick="event.stopPropagation();navLightbox(1)">&#8250;</button>
+<div class="lightbox-caption"></div>
 </div>
 
 <!-- FOOTER -->
@@ -433,6 +499,14 @@ ib_successor:"Successor",ib_successor_v:"Nuritdin Mukhitdinov",
 ib_awards:"Awards",ib_aw1:"Two Orders of Lenin",ib_aw2:"Three Orders of Red Banner of Labour",ib_aw3:"Two Orders of the Red Star",ib_aw4:"Honored Builder of Uzbek SSR",
 footer_text:"A memorial by the Umarov family. Dedicated to the memory of Aminjan Irmatovich Niyazov (1903–1973).",
 footer_wiki:"Wikipedia",footer_encyclopedia:"Great Soviet Encyclopedia, Vol. 30, p. 44",footer_zalessky:"K.A. Zalessky, \"Stalin's Empire\" (Moscow, 2000), p. 337",
+nav_photos:"Photos",
+label_photos:"Historical Photographs",photos_title:"Photo Gallery",photos_intro:"Rare photographs from the family archive and published memoirs, documenting key moments in Amin Niyazov's life and the leaders he worked alongside.",
+photo_cap_1:"Official portrait, circa 1950s",photo_cap_2:"Later years, 1960s",
+photo_cap_3:"Reception in honor of Indian PM Jawaharlal Nehru and his daughter Indira Gandhi, 1955",
+photo_cap_4:"N.A. Bulganin and N.S. Khrushchev at the Navoi Opera and Ballet Theater, Tashkent",
+photo_cap_5:"Nikita Khrushchev, Amin Niyazov, Sharaf Rashidov and others. Meeting at Tashkent Airport",
+photo_cap_6:"Sh. Rashidov, A. Niyazov, A. Kosygin and other leaders on the tribune at Lenin Square (now Independence Square), Tashkent",
+photo_cap_7:"At a party conference presidium with N.S. Khrushchev (center) and A. Niyazov (right)",
 footer_copy:"© 2024 Umarov Family"
 },
 ru: {
@@ -508,6 +582,14 @@ ib_successor:"Преемник",ib_successor_v:"Нуритдин Мухитди�
 ib_awards:"Награды",ib_aw1:"Два ордена Ленина",ib_aw2:"Три ордена Трудового Красного Знамени",ib_aw3:"Два ордена Красной Звезды",ib_aw4:"Заслуженный строитель Узбекской ССР",
 footer_text:"Мемориал семьи Умаровых. Посвящается памяти Аминджана Ирматовича Ниязова (1903–1973).",
 footer_wiki:"Википедия",footer_encyclopedia:"Большая советская энциклопедия, том 30, с. 44",footer_zalessky:"К.А. Залесский, «Империя Сталина» (Москва, 2000), с. 337",
+nav_photos:"Фотографии",
+label_photos:"Исторические фотографии",photos_title:"Фотогалерея",photos_intro:"Редкие фотографии из семейного архива и опубликованных мемуаров, запечатлевшие ключевые моменты жизни Амина Ниязова и руководителей, с которыми он работал.",
+photo_cap_1:"Официальный портрет, около 1950-х годов",photo_cap_2:"Поздние годы, 1960-е",
+photo_cap_3:"Торжественный приём в честь премьер-министра Индии Джавахарлала Неру и его дочери Индиры Ганди, 1955",
+photo_cap_4:"Н.А. Булганин и Н.С. Хрущёв в театре оперы и балета им. А. Навои, Ташкент",
+photo_cap_5:"Никита Хрущёв, Аминжон Ниязов, Шараф Рашидов и другие. Встреча в Ташкентском аэропорту",
+photo_cap_6:"Ш. Рашидов, А. Ниязов, А. Косыгин и другие руководители на трибуне площади Ленина (пл. Независимости), Ташкент",
+photo_cap_7:"В президиуме партийной конференции с Н.С. Хрущёвым (в центре) и А. Ниязовым (справа)",
 footer_copy:"© 2024 Семья Умаровых"
 },
 uz: {
@@ -583,6 +665,14 @@ ib_successor:"Voris",ib_successor_v:"Nuritdin Muxitdinov",
 ib_awards:"Mukofotlar",ib_aw1:"Ikki marta Lenin ordeni",ib_aw2:"Uch marta Mehnat Qizil Bayrogʻi ordeni",ib_aw3:"Ikki marta Qizil Yulduz ordeni",ib_aw4:"Oʻzbekiston SSR xizmat koʻrsatgan quruvchisi",
 footer_text:"Umarovlar oilasining memorial sayti. Aminjon Ermatovich Niyozov (1903–1973) xotirasiga bagʻishlanadi.",
 footer_wiki:"Vikipediya",footer_encyclopedia:"Buyuk sovet ensiklopediyasi, 30-jild, 44-bet",footer_zalessky:"K.A. Zalesskiy, «Stalin imperiyasi» (Moskva, 2000), 337-bet",
+nav_photos:"Suratlar",
+label_photos:"Tarixiy fotosuratlar",photos_title:"Fotogalereya",photos_intro:"Oilaviy arxiv va nashr etilgan xotiralardan nodir fotosuratlar — Amin Niyozov hayotining muhim lahzalari va u bilan birga ishlagan rahbarlarni aks ettiruvchi.",
+photo_cap_1:"Rasmiy portret, taxminan 1950-yillar",photo_cap_2:"Keyingi yillar, 1960-yillar",
+photo_cap_3:"Hindiston Bosh vaziri Javoharlal Neru va qizi Indira Gandi sharafiga tantanali qabul, 1955",
+photo_cap_4:"N.A. Bulganin va N.S. Xrushchyov A. Navoiy nomidagi opera va balet teatrida, Toshkent",
+photo_cap_5:"Nikita Xrushchyov, Amin Niyozov, Sharaf Rashidov va boshqalar. Toshkent aeroportida uchrashuv",
+photo_cap_6:"Sh. Rashidov, A. Niyozov, A. Kosigin va boshqa rahbarlar Lenin maydoni (Mustaqillik maydoni) minbarida, Toshkent",
+photo_cap_7:"Partiya konferentsiyasi prezidiumida N.S. Xrushchyov (markazda) va A. Niyozov (oʻngda) bilan",
 footer_copy:"© 2024 Umarovlar oilasi"
 },
 fr: {
@@ -658,6 +748,14 @@ ib_successor:"Successeur",ib_successor_v:"Nuritdin Mukhitdinov",
 ib_awards:"Distinctions",ib_aw1:"Deux Ordres de Lénine",ib_aw2:"Trois Ordres du Drapeau rouge du Travail",ib_aw3:"Deux Ordres de l'Étoile rouge",ib_aw4:"Constructeur honoré de la RSS d'Ouzbékistan",
 footer_text:"Un mémorial de la famille Umarov. Dédié à la mémoire d'Aminjan Irmatovitch Niyazov (1903–1973).",
 footer_wiki:"Wikipédia",footer_encyclopedia:"Grande Encyclopédie soviétique, Vol. 30, p. 44",footer_zalessky:"K.A. Zalessky, « L'Empire de Staline » (Moscou, 2000), p. 337",
+nav_photos:"Photos",
+label_photos:"Photographies historiques",photos_title:"Galerie photo",photos_intro:"Photographies rares provenant des archives familiales et de mémoires publiés, documentant les moments clés de la vie d'Amin Niyazov et les dirigeants aux côtés desquels il a travaillé.",
+photo_cap_1:"Portrait officiel, vers les années 1950",photo_cap_2:"Années tardives, années 1960",
+photo_cap_3:"Réception en l'honneur du PM indien Jawaharlal Nehru et sa fille Indira Gandhi, 1955",
+photo_cap_4:"N.A. Boulganine et N.S. Khrouchtchev au Théâtre d'opéra et de ballet Navoï, Tachkent",
+photo_cap_5:"Nikita Khrouchtchev, Amin Niyazov, Charaf Rachidov et autres. Rencontre à l'aéroport de Tachkent",
+photo_cap_6:"Ch. Rachidov, A. Niyazov, A. Kossyguine et autres dirigeants à la tribune de la Place Lénine (auj. Place de l'Indépendance), Tachkent",
+photo_cap_7:"Au présidium d'une conférence du Parti avec N.S. Khrouchtchev (centre) et A. Niyazov (droite)",
 footer_copy:"© 2024 Famille Umarov"
 },
 es: {
@@ -733,9 +831,44 @@ ib_successor:"Sucesor",ib_successor_v:"Nuritdín Mujitdínov",
 ib_awards:"Condecoraciones",ib_aw1:"Dos Órdenes de Lenin",ib_aw2:"Tres Órdenes de la Bandera Roja del Trabajo",ib_aw3:"Dos Órdenes de la Estrella Roja",ib_aw4:"Constructor Honorario de la RSS de Uzbekistán",
 footer_text:"Un memorial de la familia Umárov. Dedicado a la memoria de Aminján Irmátovich Niyázov (1903–1973).",
 footer_wiki:"Wikipedia",footer_encyclopedia:"Gran Enciclopedia Soviética, Vol. 30, p. 44",footer_zalessky:"K.A. Zalesski, «El Imperio de Stalin» (Moscú, 2000), p. 337",
+nav_photos:"Fotos",
+label_photos:"Fotografías históricas",photos_title:"Galería fotográfica",photos_intro:"Fotografías raras del archivo familiar y memorias publicadas, documentando momentos clave en la vida de Amín Niyázov y los líderes junto a quienes trabajó.",
+photo_cap_1:"Retrato oficial, circa años 1950",photo_cap_2:"Últimos años, años 1960",
+photo_cap_3:"Recepción en honor del PM indio Jawaharlal Nehru y su hija Indira Gandhi, 1955",
+photo_cap_4:"N.A. Bulganin y N.S. Jrushchov en el Teatro de Ópera y Ballet Navoï, Taskent",
+photo_cap_5:"Nikita Jrushchov, Amín Niyázov, Sharaf Rashídov y otros. Encuentro en el aeropuerto de Taskent",
+photo_cap_6:"Sh. Rashídov, A. Niyázov, A. Kosiguin y otros dirigentes en la tribuna de la Plaza Lenin (hoy Plaza de la Independencia), Taskent",
+photo_cap_7:"En el presidium de una conferencia del Partido con N.S. Jrushchov (centro) y A. Niyázov (derecha)",
 footer_copy:"© 2024 Familia Umárov"
 }
 };
+
+// ===== LIGHTBOX =====
+const galleryImages=[
+{src:'photos/portrait-younger.jpg',cap_en:'Official portrait, circa 1950s',cap_ru:'Официальный портрет, около 1950-х годов',cap_uz:'Rasmiy portret, taxminan 1950-yillar'},
+{src:'photos/portrait-older.jpg',cap_en:'Later years, 1960s',cap_ru:'Поздние годы, 1960-е',cap_uz:'Keyingi yillar, 1960-yillar'},
+{src:'photos/nehru-gandhi-reception.jpg',cap_en:'Reception in honor of Indian PM Jawaharlal Nehru and his daughter Indira Gandhi, 1955',cap_ru:'Торжественный приём в честь премьер-министра Индии Джавахарлала Неру и его дочери Индиры Ганди, 1955',cap_uz:'Hindiston Bosh vaziri Javoharlal Neru va qizi Indira Gandi sharafiga tantanali qabul, 1955'},
+{src:'photos/opera-bulganin-khrushchev.jpg',cap_en:'N.A. Bulganin and N.S. Khrushchev at the Navoi Opera and Ballet Theater, Tashkent',cap_ru:'Н.А. Булганин и Н.С. Хрущёв в театре оперы и балета им. А. Навои, Ташкент',cap_uz:'N.A. Bulganin va N.S. Xrushchyov A. Navoiy nomidagi opera va balet teatrida, Toshkent'},
+{src:'photos/tashkent-airport-khrushchev.jpg',cap_en:'Nikita Khrushchev, Amin Niyazov, Sharaf Rashidov and others. Meeting at Tashkent Airport',cap_ru:'Никита Хрущёв, Аминжон Ниязов, Шараф Рашидов и другие. Встреча в Ташкентском аэропорту',cap_uz:'Nikita Xrushchyov, Amin Niyozov, Sharaf Rashidov va boshqalar. Toshkent aeroportida uchrashuv'},
+{src:'photos/lenin-square-tribune.jpg',cap_en:'Sh. Rashidov, A. Niyazov, A. Kosygin and other leaders on the tribune at Lenin Square (now Independence Square), Tashkent',cap_ru:'Ш. Рашидов, А. Ниязов, А. Косыгин и другие руководители республики на трибуне площади Ленина (пл. Независимости), Ташкент',cap_uz:'Sh. Rashidov, A. Niyozov, A. Kosigin va respublika boshqa rahbarlari Lenin maydoni (Mustaqillik maydoni) minbarida, Toshkent'},
+{src:'photos/conference-with-khrushchev.jpg',cap_en:'At a party conference presidium with N.S. Khrushchev (center) and A. Niyazov (right)',cap_ru:'В президиуме партийной конференции с Н.С. Хрущёвым (в центре) и А. Ниязовым (справа)',cap_uz:'Partiya konferentsiyasi prezidiumida N.S. Xrushchyov (markazda) va A. Niyozov (oʻngda) bilan'}
+];
+let currentLightbox=-1;
+function openLightbox(i){
+currentLightbox=i;const lb=document.getElementById('lightbox');const img=lb.querySelector('img');const cap=lb.querySelector('.lightbox-caption');
+img.src=galleryImages[i].src;const lang=document.documentElement.getAttribute('data-lang')||'en';
+cap.textContent=galleryImages[i]['cap_'+lang]||galleryImages[i].cap_en;
+lb.classList.add('active');document.body.style.overflow='hidden';
+}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';currentLightbox=-1}
+function navLightbox(dir){
+if(currentLightbox<0)return;
+currentLightbox=(currentLightbox+dir+galleryImages.length)%galleryImages.length;
+const lb=document.getElementById('lightbox');const img=lb.querySelector('img');const cap=lb.querySelector('.lightbox-caption');
+img.src=galleryImages[currentLightbox].src;const lang=document.documentElement.getAttribute('data-lang')||'en';
+cap.textContent=galleryImages[currentLightbox]['cap_'+lang]||galleryImages[currentLightbox].cap_en;
+}
+document.addEventListener('keydown',e=>{if(currentLightbox<0)return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navLightbox(-1);if(e.key==='ArrowRight')navLightbox(1)});
 
 // ===== THEME =====
 const themeBtn=document.getElementById('themeToggle');

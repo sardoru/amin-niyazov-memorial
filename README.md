@@ -54,7 +54,7 @@ Includes rare photographs from family archives and published memoirs:
 Aminjan Niyazov is the great-grandfather of the Umarov family. His granddaughter married into the family, linking the Niyazov line of statesmanship with the Bobojonov line of science.
 
 **Related memorials:**
-- [Gulom Bobojonov](https://www.gulam-babodjanov.com) — Rector, Scientist of Silk (1907–1955)
+- [Gulam Babodjanov](https://www.gulam-babodjanov.com) — Rector of the Tashkent Agricultural Institute, Scientist of Silk (1907-1955)
 - [Giyas Umarov](https://www.giyas-umarov.com) — Founder of Heliotechnology, Academician (1921–1988)
 
 ## Deploy

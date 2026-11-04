@@ -33,7 +33,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Person","@id":"https://www.amin-niyazov.com/#person","name":"Aminjan Irmatovich Niyazov","alternateName":["Amin Irmatovich Niyazov","Amin Niyazov","Аминджан Ирматович Ниязов","Амин Ирматович Ниязов"],"birthDate":"1903-11-07","deathDate":"1973-12-26","birthPlace":{"@type":"Place","name":"Ak-Tepe, near Margilan, Fergana Valley"},"deathPlace":{"@type":"Place","name":"Tashkent, Uzbek SSR"},"jobTitle":"First Secretary of the Communist Party of Uzbekistan (1950–1955)","image":"https://www.amin-niyazov.com/photos/portrait-younger.jpg","url":"https://www.amin-niyazov.com/","sameAs":["https://en.wikipedia.org/wiki/Amin_Niyazov","https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D1%8F%D0%B7%D0%BE%D0%B2,_%D0%90%D0%BC%D0%B8%D0%BD_%D0%98%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B8%D1%87"]},
-{"@type":"VideoObject","name":"The First Secretary","description":"A documentary film about the life of Aminjan Niyazov, from the Fergana Valley to the leadership of Soviet Uzbekistan and the years that followed.","thumbnailUrl":"https://www.amin-niyazov.com/film/poster-en.jpg","uploadDate":"2026-11-04","duration":"PT21M8S","inLanguage":"en","contentUrl":"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04.mp4","about":{"@id":"https://www.amin-niyazov.com/#person"}}
+{"@type":"VideoObject","name":"The First Secretary","description":"A documentary film about the life of Aminjan Niyazov, from the Fergana Valley to the leadership of Soviet Uzbekistan and the years that followed.","thumbnailUrl":"https://www.amin-niyazov.com/film/poster-en.jpg","uploadDate":"2026-11-04","duration":"PT20M13S","inLanguage":"en","contentUrl":"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04b.mp4","about":{"@id":"https://www.amin-niyazov.com/#person"}}
 ]}
 </script>
 <style>
@@ -477,7 +477,7 @@ body,.on-dark,.hero,.film,.colophon{background:#fff!important;color:#111!importa
 <p class="hero-dates"><span>1903</span><span class="dash" aria-hidden="true"></span><span>1973</span></p>
 <p class="hero-titles" data-i18n="hero_titles">State and Political Leader of Uzbekistan · First Secretary of the Communist Party · Chairman of the Supreme Soviet</p>
 <div class="hero-cta">
-<a class="cta-film" href="#film" id="heroWatch"><span class="disc" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.5 5.2v13.6L18.6 12z" fill="currentColor"/></svg></span><span data-i18n="ui_watch">Watch the film · 21 min</span></a>
+<a class="cta-film" href="#film" id="heroWatch"><span class="disc" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.5 5.2v13.6L18.6 12z" fill="currentColor"/></svg></span><span data-i18n="ui_watch">Watch the film · 20 min</span></a>
 <a class="cta-read" href="#biography"><span data-i18n="ui_read">Read his life</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
 </div>
 </div>
@@ -502,15 +502,15 @@ body,.on-dark,.hero,.film,.colophon{background:#fff!important;color:#111!importa
 </header>
 <div class="film-frame" id="filmFrame">
 <video id="filmVideo" controls preload="metadata" playsinline poster="film/poster-en.jpg">
-<source src="https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04.mp4" type="video/mp4">
+<source src="https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04b.mp4" type="video/mp4">
 <track kind="subtitles" src="film/the-first-secretary-en.vtt" srclang="en" label="English">
 </video>
 <button type="button" class="film-play" id="filmPlay" data-i18n-aria="ui_play" aria-label="Play the film" hidden><span class="disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 5.2v13.6L18.6 12z" fill="currentColor"/></svg></span></button>
 </div>
 <div class="film-bar">
 <div class="film-switch" role="group" data-i18n-aria="ui_film_lang" aria-label="Film language">
-<button type="button" class="film-lang-btn active" data-film="en" aria-pressed="true">English · 21 min</button>
-<button type="button" class="film-lang-btn" data-film="ru" aria-pressed="false">Русский · 20 мин</button>
+<button type="button" class="film-lang-btn active" data-film="en" aria-pressed="true">English · 20 min</button>
+<button type="button" class="film-lang-btn" data-film="ru" aria-pressed="false">Русский · 19 мин</button>
 </div>
 <ul class="film-meta">
 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M10.6 10.3a2.3 2.3 0 1 0 0 3.4M17 10.3a2.3 2.3 0 1 0 0 3.4"/></svg><span data-i18n="ui_subs">Subtitles EN / RU</span></li>
@@ -2168,11 +2168,11 @@ footer_zalessky:"K.A. Zalesski, «El Imperio de Stalin» (Moscú, 2000), p. 337"
 
 // ===== TRANSLATIONS (interface, added in the 2026 redesign) =====
 const UI = {
-en:{ui_skip:"Skip to content",ui_chapters:"Chapters",ui_close:"Close",ui_language:"Language",ui_theme:"Switch between light and dark theme",ui_theme_row:"Light / dark",ui_watch:"Watch the film · 21 min",ui_read:"Read his life",ui_play:"Play the film",ui_subs:"Subtitles EN / RU",ui_film_lang:"Film language",ui_prev:"Previous photograph",ui_next:"Next photograph",ui_top:"Back to top",ui_years:"Years",ui_viewer:"Photograph viewer",ui_sections:"Main sections",label_glance:"At a glance",glance_title:"A life of service, 1903–1973"},
-ru:{ui_skip:"Перейти к содержанию",ui_chapters:"Главы",ui_close:"Закрыть",ui_language:"Язык",ui_theme:"Переключить светлую и тёмную тему",ui_theme_row:"Светлая / тёмная",ui_watch:"Смотреть фильм · 20 мин",ui_read:"Читать биографию",ui_play:"Смотреть фильм",ui_subs:"Субтитры EN / RU",ui_film_lang:"Язык фильма",ui_prev:"Предыдущая фотография",ui_next:"Следующая фотография",ui_top:"Наверх",ui_years:"Годы",ui_viewer:"Просмотр фотографий",ui_sections:"Основные разделы",label_glance:"Коротко",glance_title:"Жизнь служения, 1903–1973"},
-uz:{ui_skip:"Asosiy matnga oʻtish",ui_chapters:"Boblar",ui_close:"Yopish",ui_language:"Til",ui_theme:"Yorugʻ va qorongʻi mavzuni almashtirish",ui_theme_row:"Yorugʻ / qorongʻi",ui_watch:"Filmni koʻrish · 21 daqiqa",ui_read:"Hayot yoʻlini oʻqish",ui_play:"Filmni koʻrish",ui_subs:"Subtitrlar EN / RU",ui_film_lang:"Film tili",ui_prev:"Oldingi surat",ui_next:"Keyingi surat",ui_top:"Yuqoriga",ui_years:"Yillar",ui_viewer:"Suratlarni koʻrish",ui_sections:"Asosiy boʻlimlar",label_glance:"Qisqacha",glance_title:"Xizmatga bagʻishlangan umr, 1903–1973"},
-fr:{ui_skip:"Aller au contenu",ui_chapters:"Chapitres",ui_close:"Fermer",ui_language:"Langue",ui_theme:"Basculer entre thème clair et sombre",ui_theme_row:"Clair / sombre",ui_watch:"Voir le film · 21 min",ui_read:"Lire sa vie",ui_play:"Lire le film",ui_subs:"Sous-titres EN / RU",ui_film_lang:"Langue du film",ui_prev:"Photographie précédente",ui_next:"Photographie suivante",ui_top:"Retour en haut",ui_years:"Années",ui_viewer:"Visionneuse de photographies",ui_sections:"Sections principales",label_glance:"En bref",glance_title:"Une vie de service, 1903–1973"},
-es:{ui_skip:"Saltar al contenido",ui_chapters:"Capítulos",ui_close:"Cerrar",ui_language:"Idioma",ui_theme:"Cambiar entre tema claro y oscuro",ui_theme_row:"Claro / oscuro",ui_watch:"Ver la película · 21 min",ui_read:"Leer su vida",ui_play:"Reproducir la película",ui_subs:"Subtítulos EN / RU",ui_film_lang:"Idioma de la película",ui_prev:"Fotografía anterior",ui_next:"Fotografía siguiente",ui_top:"Volver arriba",ui_years:"Años",ui_viewer:"Visor de fotografías",ui_sections:"Secciones principales",label_glance:"En resumen",glance_title:"Una vida de servicio, 1903–1973"}
+en:{ui_skip:"Skip to content",ui_chapters:"Chapters",ui_close:"Close",ui_language:"Language",ui_theme:"Switch between light and dark theme",ui_theme_row:"Light / dark",ui_watch:"Watch the film · 20 min",ui_read:"Read his life",ui_play:"Play the film",ui_subs:"Subtitles EN / RU",ui_film_lang:"Film language",ui_prev:"Previous photograph",ui_next:"Next photograph",ui_top:"Back to top",ui_years:"Years",ui_viewer:"Photograph viewer",ui_sections:"Main sections",label_glance:"At a glance",glance_title:"A life of service, 1903–1973"},
+ru:{ui_skip:"Перейти к содержанию",ui_chapters:"Главы",ui_close:"Закрыть",ui_language:"Язык",ui_theme:"Переключить светлую и тёмную тему",ui_theme_row:"Светлая / тёмная",ui_watch:"Смотреть фильм · 19 мин",ui_read:"Читать биографию",ui_play:"Смотреть фильм",ui_subs:"Субтитры EN / RU",ui_film_lang:"Язык фильма",ui_prev:"Предыдущая фотография",ui_next:"Следующая фотография",ui_top:"Наверх",ui_years:"Годы",ui_viewer:"Просмотр фотографий",ui_sections:"Основные разделы",label_glance:"Коротко",glance_title:"Жизнь служения, 1903–1973"},
+uz:{ui_skip:"Asosiy matnga oʻtish",ui_chapters:"Boblar",ui_close:"Yopish",ui_language:"Til",ui_theme:"Yorugʻ va qorongʻi mavzuni almashtirish",ui_theme_row:"Yorugʻ / qorongʻi",ui_watch:"Filmni koʻrish · 20 daqiqa",ui_read:"Hayot yoʻlini oʻqish",ui_play:"Filmni koʻrish",ui_subs:"Subtitrlar EN / RU",ui_film_lang:"Film tili",ui_prev:"Oldingi surat",ui_next:"Keyingi surat",ui_top:"Yuqoriga",ui_years:"Yillar",ui_viewer:"Suratlarni koʻrish",ui_sections:"Asosiy boʻlimlar",label_glance:"Qisqacha",glance_title:"Xizmatga bagʻishlangan umr, 1903–1973"},
+fr:{ui_skip:"Aller au contenu",ui_chapters:"Chapitres",ui_close:"Fermer",ui_language:"Langue",ui_theme:"Basculer entre thème clair et sombre",ui_theme_row:"Clair / sombre",ui_watch:"Voir le film · 20 min",ui_read:"Lire sa vie",ui_play:"Lire le film",ui_subs:"Sous-titres EN / RU",ui_film_lang:"Langue du film",ui_prev:"Photographie précédente",ui_next:"Photographie suivante",ui_top:"Retour en haut",ui_years:"Années",ui_viewer:"Visionneuse de photographies",ui_sections:"Sections principales",label_glance:"En bref",glance_title:"Une vie de service, 1903–1973"},
+es:{ui_skip:"Saltar al contenido",ui_chapters:"Capítulos",ui_close:"Cerrar",ui_language:"Idioma",ui_theme:"Cambiar entre tema claro y oscuro",ui_theme_row:"Claro / oscuro",ui_watch:"Ver la película · 20 min",ui_read:"Leer su vida",ui_play:"Reproducir la película",ui_subs:"Subtítulos EN / RU",ui_film_lang:"Idioma de la película",ui_prev:"Fotografía anterior",ui_next:"Fotografía siguiente",ui_top:"Volver arriba",ui_years:"Años",ui_viewer:"Visor de fotografías",ui_sections:"Secciones principales",label_glance:"En resumen",glance_title:"Una vida de servicio, 1903–1973"}
 };
 for (const l in UI) Object.assign(T[l], UI[l]);
 
@@ -2196,8 +2196,8 @@ $$('[data-theme-toggle]').forEach(b=>b.addEventListener('click',()=>setTheme(roo
 
 // ===== FILM =====
 const FILMS={
-en:{src:"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04.mp4",poster:"film/poster-en.jpg",vtt:"film/the-first-secretary-en.vtt",srclang:"en",label:"English"},
-ru:{src:"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-ru-2026-11-04.mp4",poster:"film/poster-ru.jpg",vtt:"film/the-first-secretary-ru.vtt",srclang:"ru",label:"Русский"}
+en:{src:"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04b.mp4",poster:"film/poster-en.jpg",vtt:"film/the-first-secretary-en.vtt",srclang:"en",label:"English"},
+ru:{src:"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-ru-2026-11-04b.mp4",poster:"film/poster-ru.jpg",vtt:"film/the-first-secretary-ru.vtt",srclang:"ru",label:"Русский"}
 };
 const video=$('#filmVideo'),frame=$('#filmFrame'),playBtn=$('#filmPlay');
 let filmCurrent='en',filmChosen=false;

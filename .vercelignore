@@ -1,0 +1,8 @@
+# Working notes and design sources stay in git but are not published.
+# (content-reference.md was being served at /content-reference.md, including family
+#  references that were removed from the page itself.)
+README.md
+content-reference.md
+family-memorial-text.md
+design/
+.claude/

@@ -197,6 +197,15 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 .hero{padding:2rem 1rem}
 .main-content{padding:1rem .8rem}
 }
+
+/* ===== FILM ===== */
+.film-frame{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-lg);background:#000;aspect-ratio:16/9;margin:1.2rem 0 .9rem}
+.film-frame video{display:block;width:100%;height:100%;background:#000}
+.film-switch{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 .7rem}
+.film-lang-btn{background:var(--bg-card);border:1px solid var(--border);color:var(--text);padding:.45rem 1.1rem;border-radius:999px;font-family:inherit;font-size:var(--fs-sm);cursor:pointer;min-height:44px;transition:all var(--transition)}
+.film-lang-btn:hover{border-color:var(--gold)}
+.film-lang-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.section p.film-note{font-size:var(--fs-sm);color:var(--text-muted);text-align:left}
 </style>
 </head>
 <body>
@@ -206,6 +215,7 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 <div class="nav-inner">
 <div class="nav-brand" data-i18n="nav_brand">A. I. Niyazov</div>
 <div class="nav-links">
+<a href="#film" data-i18n="nav_film">Film</a>
 <a href="#biography" data-i18n="nav_bio">Biography</a>
 <a href="#timeline" data-i18n="nav_timeline">Timeline</a>
 <a href="#early-years" data-i18n="nav_early">Early Years</a>
@@ -247,6 +257,24 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 <!-- MAIN -->
 <div class="main-content">
 <article class="article">
+
+<!-- FILM -->
+<section class="section" id="film">
+<div class="section-label" data-i18n="label_film">Documentary</div>
+<h2 data-i18n="film_title">The First Secretary</h2>
+<p data-i18n="film_p">A documentary film about the life of Aminjan Niyazov — from the Fergana Valley to the leadership of Soviet Uzbekistan and the years that followed. Available in English and Russian.</p>
+<div class="film-frame">
+<video id="filmVideo" controls preload="metadata" playsinline poster="film/poster-en.jpg">
+<source src="https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04.mp4" type="video/mp4">
+<track kind="subtitles" src="film/the-first-secretary-en.vtt" srclang="en" label="English">
+</video>
+</div>
+<div class="film-switch" role="group" aria-label="Film language">
+<button type="button" class="film-lang-btn active" data-film="en" aria-pressed="true">English · 21 min</button>
+<button type="button" class="film-lang-btn" data-film="ru" aria-pressed="false">Русский · 20 мин</button>
+</div>
+<p class="film-note" data-i18n="film_note">Choose the language of the film above. Subtitles can be turned on in the player.</p>
+</section>
 
 <!-- BIOGRAPHY -->
 <section class="section" id="biography">
@@ -688,6 +716,7 @@ footer .footer-links{margin-top:.8rem;display:flex;justify-content:center;gap:1.
 // ===== TRANSLATIONS =====
 const T = {
 en: {
+nav_film:"Film",label_film:"Documentary",film_title:"The First Secretary",film_p:"A documentary film about the life of Aminjan Niyazov — from the Fergana Valley to the leadership of Soviet Uzbekistan and the years that followed. Available in English and Russian.",film_note:"Choose the language of the film above. Subtitles can be turned on in the player.",
 nav_brand:"A. I. Niyazov",nav_bio:"Biography",nav_early:"Early Years",nav_edu:"Education",nav_wwii:"WWII",nav_power:"Leadership",nav_fall:"Dismissal",nav_legacy:"Legacy",nav_family:"Family",
 hero_name:"Aminjan Irmatovich Niyazov",hero_name_ru:"Аминджан Ирматович Ниязов",hero_titles:"State and Political Leader of Uzbekistan · First Secretary of the Communist Party · Chairman of the Supreme Soviet",
 label_biography:"Biography",bio_title:"From Sharecropper's Son to Leader of a Nation",
@@ -818,6 +847,7 @@ photo_cap_7:"At a party conference presidium with N.S. Khrushchev (center) and A
 footer_copy:"© 2024 Niyazov Family"
 },
 ru: {
+nav_film:"Фильм",label_film:"Документальный фильм",film_title:"Первый секретарь",film_p:"Документальный фильм о жизни Аминджана Ниязова — от Ферганской долины до руководства Советским Узбекистаном и последующих лет. Фильм доступен на русском и английском языках.",film_note:"Выберите язык фильма выше. Субтитры можно включить в плеере.",
 nav_brand:"А. И. Ниязов",
 nav_bio:"Биография",
 nav_early:"Ранние годы",
@@ -1063,6 +1093,7 @@ footer_encyclopedia:"Большая советская энциклопедия,
 footer_zalessky:"К.А. Залесский, «Империя Сталина» (Москва, 2000), с. 337"
 },
 uz: {
+nav_film:"Film",label_film:"Hujjatli film",film_title:"Birinchi kotib",film_p:"Amin Ermatovich Niyozovning hayoti haqida hujjatli film — Farg‘ona vodiysidan Sovet O‘zbekistoniga rahbarlik qilgan yillargacha va undan keyingi davr. Film ingliz va rus tillarida.",film_note:"Film tilini yuqorida tanlang. Subtitrlarni pleyerda yoqish mumkin.",
 nav_brand:"A. E. Niyozov",
 nav_bio:"Tarjimayi hol",
 nav_early:"Yoshlik yillari",
@@ -1308,6 +1339,7 @@ footer_encyclopedia:"Buyuk sovet ensiklopediyasi, 30-jild, 44-bet",
 footer_zalessky:"K.A. Zalesskiy, «Stalin imperiyasi» (Moskva, 2000), 337-bet"
 },
 fr: {
+nav_film:"Film",label_film:"Documentaire",film_title:"Le Premier secrétaire",film_p:"Un film documentaire sur la vie d’Aminjan Niyazov — de la vallée de Ferghana à la direction de l’Ouzbékistan soviétique, et les années qui suivirent. Disponible en anglais et en russe.",film_note:"Choisissez la langue du film ci-dessus. Les sous-titres peuvent être activés dans le lecteur.",
 nav_brand:"A. I. Niyazov",
 nav_bio:"Biographie",
 nav_early:"Jeunesse",
@@ -1553,6 +1585,7 @@ footer_encyclopedia:"Grande Encyclopédie soviétique, Vol. 30, p. 44",
 footer_zalessky:"K.A. Zalessky, « L'Empire de Staline » (Moscou, 2000), p. 337"
 },
 es: {
+nav_film:"Película",label_film:"Documental",film_title:"El Primer Secretario",film_p:"Un documental sobre la vida de Aminján Niyázov: del valle de Fergana a la dirección del Uzbekistán soviético y los años que siguieron. Disponible en inglés y en ruso.",film_note:"Elija arriba el idioma de la película. Los subtítulos se pueden activar en el reproductor.",
 nav_brand:"A. I. Niyázov",
 nav_bio:"Biografía",
 nav_early:"Primeros años",
@@ -1839,6 +1872,25 @@ localStorage.setItem('theme',next);
 themeBtn.textContent=next==='dark'?'🌙':'☀️';
 });
 
+// ===== FILM =====
+const FILMS={
+en:{src:"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-en-2026-11-04.mp4",poster:"film/poster-en.jpg",vtt:"film/the-first-secretary-en.vtt",srclang:"en",label:"English"},
+ru:{src:"https://wyt9qatye4avalcj.public.blob.vercel-storage.com/films/the-first-secretary-ru-2026-11-04.mp4",poster:"film/poster-ru.jpg",vtt:"film/the-first-secretary-ru.vtt",srclang:"ru",label:"Русский"}
+};
+let filmCurrent='en',filmChosen=false;
+function setFilm(code){
+const f=FILMS[code],v=document.getElementById('filmVideo');
+if(!f||!v||code===filmCurrent)return;
+v.pause();
+v.querySelectorAll('source,track').forEach(n=>n.remove());
+const src=document.createElement('source');src.src=f.src;src.type='video/mp4';v.appendChild(src);
+const tr=document.createElement('track');tr.kind='subtitles';tr.src=f.vtt;tr.srclang=f.srclang;tr.label=f.label;v.appendChild(tr);
+v.poster=f.poster;v.load();filmCurrent=code;
+document.querySelectorAll('.film-lang-btn').forEach(b=>{const on=b.dataset.film===code;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false')});
+}
+function syncFilm(lang){const v=document.getElementById('filmVideo');if(!filmChosen&&v&&v.paused)setFilm(lang==='ru'?'ru':'en')}
+document.querySelectorAll('.film-lang-btn').forEach(b=>{b.addEventListener('click',()=>{filmChosen=true;setFilm(b.dataset.film)})});
+
 // ===== LANGUAGE =====
 function setLang(lang){
 document.documentElement.setAttribute('data-lang',lang);
@@ -1856,6 +1908,7 @@ el.innerHTML=t[key];
 }
 });
 document.documentElement.lang=lang==='uz'?'uz':lang==='ru'?'ru':lang==='fr'?'fr':lang==='es'?'es':'en';
+syncFilm(lang);
 }
 document.querySelectorAll('.lang-btn').forEach(b=>{b.addEventListener('click',()=>setLang(b.dataset.lang))});
 const stored_lang=localStorage.getItem('lang')||'en';

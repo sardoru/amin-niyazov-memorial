@@ -14,7 +14,7 @@ He was dismissed in 1955 by his former classmate Nikita Khrushchev, bore it with
 
 ## Features
 
-- 🎬 **Documentary film**: *The First Secretary* in English and Russian. The Russian site plays the Russian cut; subtitles are available in both.
+- 🎬 **Documentary film**: *The First Secretary* in English, Russian and Uzbek (*Birinchi kotib*). The Russian and Uzbek sites play their own cuts; subtitles are available in all three.
 - 📖 **Biography in chapters**: a sticky chapter thread on desktop, a chapter sheet on phones, a reading-progress line, and current-chapter context in the top bar.
 - 🧭 **At a glance**: a fact file plus a "career ladder" chart of every office he held on a 1925–1960 axis.
 - 🏗️ **What He Built**: six domains with custom icons.

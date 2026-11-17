@@ -201,6 +201,8 @@ html.i18n-pending main,html.i18n-pending .colophon{opacity:0;animation:i18n-reve
 .film-lang-btn{border:0;background:transparent;color:var(--ink);padding:.55rem 1.25rem;min-height:44px;border-radius:999px;font-family:var(--font-text);font-size:.98rem;cursor:pointer;transition:background .2s,color .2s}
 .film-lang-btn:hover{color:var(--saffron)}
 .film-lang-btn.active{background:var(--saffron);color:#0D1222;font-weight:600}
+.film-dur{white-space:nowrap}
+@media (max-width:520px){.film-switch{display:flex;width:100%}.film-lang-btn{flex:1;padding:.45rem .4rem;line-height:1.25}.film-lang-btn .film-dur{display:block;font-size:.84em;opacity:.85}.film-lang-btn .film-sep{display:none}}
 .film-meta{display:flex;flex-wrap:wrap;gap:10px 24px;list-style:none;margin:0;padding:0;font-family:var(--font-ui);font-size:.84rem;color:var(--muted)}
 .film-meta li{display:flex;align-items:center;gap:9px}
 .film-meta svg{width:20px;height:20px;color:var(--gold)}
@@ -509,9 +511,9 @@ body,.on-dark,.hero,.film,.colophon{background:#fff!important;color:#111!importa
 </div>
 <div class="film-bar">
 <div class="film-switch" role="group" data-i18n-aria="ui_film_lang" aria-label="Film language">
-<button type="button" class="film-lang-btn active" data-film="en" aria-pressed="true">English · 22 min</button>
-<button type="button" class="film-lang-btn" data-film="ru" aria-pressed="false">Русский · 20 мин</button>
-<button type="button" class="film-lang-btn" data-film="uz" aria-pressed="false">Oʻzbekcha · 23 daqiqa</button>
+<button type="button" class="film-lang-btn active" data-film="en" aria-pressed="true">English<span class="film-dur"><span class="film-sep"> · </span>22 min</span></button>
+<button type="button" class="film-lang-btn" data-film="ru" aria-pressed="false">Русский<span class="film-dur"><span class="film-sep"> · </span>20 мин</span></button>
+<button type="button" class="film-lang-btn" data-film="uz" aria-pressed="false">Oʻzbekcha<span class="film-dur"><span class="film-sep"> · </span>23 daqiqa</span></button>
 </div>
 <ul class="film-meta">
 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M10.6 10.3a2.3 2.3 0 1 0 0 3.4M17 10.3a2.3 2.3 0 1 0 0 3.4"/></svg><span data-i18n="ui_subs">Subtitles EN / RU / UZ</span></li>
